@@ -1,0 +1,27 @@
+{
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\boundary_stabilized_models",
+  "rows": 195,
+  "outer_folds": 39,
+  "knot_counts": [
+    3,
+    4,
+    5
+  ],
+  "primary_knot_count": 4,
+  "lambda_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "inner_folds": 5,
+  "primary_comparison": "rcs_phone_ridge minus rcs_additive",
+  "lambda_selection": "within each outer training fold using strip-level inner CV",
+  "limitations": [
+    "One physical strip per phone x pH cell.",
+    "Known-phone new-cell validation, not unseen-phone validation."
+  ]
+}

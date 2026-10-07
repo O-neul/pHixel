@@ -1,0 +1,37 @@
+{
+  "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+  "annotation_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\annotations",
+  "split_file": null,
+  "column_map": {
+    "image_id_column": "image_id",
+    "image_path_column": "image_path",
+    "phone_column": "phone_id",
+    "light_column": "light_id",
+    "ph_column": "ph_nominal",
+    "split_column": ""
+  },
+  "selection": "audit_grid",
+  "audit_ph": [
+    2.0,
+    6.0,
+    8.0,
+    9.0,
+    12.0
+  ],
+  "rows_available": 195,
+  "rows_processed": 75,
+  "geometry": {
+    "roi_label": "roi",
+    "bg_side": "left",
+    "bg_width_ratio": 1.0,
+    "bg_height_ratio": 1.0,
+    "bg_gap_ratio": 0.25,
+    "context_margin_ratio": 0.15
+  },
+  "model_input": {
+    "image_size": 224,
+    "resize_mode": "letterbox",
+    "letterbox_fill": "white"
+  },
+  "important": "The source nuisance-preview script contains no separate spatial background rectangle. This script defines an adjacent local background rectangle explicitly. Contact sheets must be checked for handwritten labels or other leakage."
+}

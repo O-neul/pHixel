@@ -1,0 +1,8 @@
+{
+  "variance_input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\multivariate_lab\\asca_variance.csv",
+  "loadings_input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\multivariate_lab\\asca_loadings.csv",
+  "scores_input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\multivariate_lab\\asca_scores.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\asca_interaction_summary",
+  "scaling": "standardized",
+  "note": "ASCA loading signs are arbitrary; interpret relative magnitudes."
+}

@@ -1,0 +1,60 @@
+{
+  "implementation": "direct balanced factorial ANOVA; no statsmodels",
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_effects",
+  "rows": 195,
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "features": [
+    "pad_L",
+    "pad_a",
+    "pad_b",
+    "bg_L",
+    "bg_a",
+    "bg_b",
+    "contrast_L",
+    "contrast_a",
+    "contrast_b"
+  ],
+  "model": "Y = pH + phone + light + pH:phone + pH:light + phone:light + residual",
+  "residual_interpretation": "pH x phone x light interaction plus measurement/extraction error",
+  "expected_degrees_of_freedom": {
+    "pH": 12,
+    "phone": 2,
+    "light": 4,
+    "pH_x_phone": 24,
+    "pH_x_light": 48,
+    "phone_x_light": 8,
+    "residual": 96,
+    "corrected_total": 194
+  },
+  "limitations": [
+    "Each phone x pH cell contains one physical strip. pH x phone variation cannot be separated from strip-specific cell variation.",
+    "The three-way interaction and pure error are not separately estimable."
+  ]
+}

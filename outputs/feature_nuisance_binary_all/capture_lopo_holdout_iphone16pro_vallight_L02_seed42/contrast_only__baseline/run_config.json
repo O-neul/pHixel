@@ -1,0 +1,13 @@
+{
+  "feature_group": "contrast_only",
+  "features": [
+    "contrast_L",
+    "contrast_a",
+    "contrast_b"
+  ],
+  "method": "baseline",
+  "selected_C": 0.1,
+  "train_original_rows": 96,
+  "train_total_rows": 96,
+  "seed": 42
+}

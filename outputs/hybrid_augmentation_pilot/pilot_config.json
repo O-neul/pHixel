@@ -1,0 +1,68 @@
+{
+  "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\local_context_all_whitepad\\local_context_manifest.csv",
+  "library": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\hybrid_augmentation_library\\augmentation_library.json",
+  "manifest_audit": {
+    "phone_column": "phone",
+    "light_column": "light",
+    "ph_column": "ph_nominal",
+    "image_column": "model_input_path",
+    "mask_column": null,
+    "mask_mode": "manifest_roi_model_box"
+  },
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "validation_lights": [
+    "L01",
+    "L03",
+    "L05"
+  ],
+  "seeds": [
+    42,
+    123
+  ],
+  "methods": [
+    "baseline",
+    "colorjitter",
+    "global_empirical",
+    "hybrid_empirical"
+  ],
+  "n_folds": 9,
+  "binary_task": "acidic pH 1-6 vs alkaline pH 8-13; pH7 excluded",
+  "augmentation": {
+    "probability": 0.7,
+    "background_strength": 0.5,
+    "global_contrast_strength": 0.5,
+    "trajectory_strength": 0.5,
+    "trajectory_boundary_policy": "library internal pH only; pH-dependent term disabled outside library range",
+    "roi_box_frac_fallback": [
+      0.52,
+      0.08,
+      0.98,
+      0.92
+    ],
+    "mask_feather_px": 16.0
+  },
+  "training": {
+    "image_size": 224,
+    "batch_size": 16,
+    "head_epochs": 4,
+    "finetune_epochs": 8,
+    "patience": 3,
+    "head_lr": 0.001,
+    "finetune_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "pretrained": true
+  },
+  "decision_rule": "Hybrid macro-F1 must exceed baseline and global empirical overall, and in at least two-thirds of holdout phones.",
+  "important_note": "Do not tune augmentation strengths after inspecting test performance. This is a fixed pilot."
+}

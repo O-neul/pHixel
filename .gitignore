@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Raw data should normally remain local.
+data/raw/captures/images/*
+!data/raw/captures/images/.gitkeep
+data/raw/captures/annotations/*
+!data/raw/captures/annotations/.gitkeep
+data/raw/external_qub/*
+!data/raw/external_qub/.gitkeep
+
+outputs/models/

@@ -1,0 +1,23 @@
+{
+  "image_path": "original_file",
+  "phone_id": "phone_id",
+  "phone_label": "phone_model",
+  "light_id": "light_id",
+  "light_label": "light_label",
+  "ph_nominal": "ph_nominal",
+  "strip_id": "strip_id",
+
+  "pad_L": "",
+  "pad_a": "",
+  "pad_b": "",
+  "pad_R": "",
+  "pad_G": "",
+  "pad_B": "",
+
+  "bg_L": "",
+  "bg_a": "",
+  "bg_b": "",
+  "bg_R": "",
+  "bg_G": "",
+  "bg_B": ""
+}

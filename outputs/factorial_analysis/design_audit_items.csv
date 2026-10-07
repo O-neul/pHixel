@@ -1,0 +1,15 @@
+﻿audit_item,status,observed,expected,details
+row_count,PASS,195,195,
+unique_image_id_count,PASS,195,195,Each image_id must identify exactly one row.
+nonempty_strip_id,PASS,195,195,
+phone_level_count,PASS,3,3,"galaxy_s24plus, iphone13pro, iphone16pro"
+light_level_count,PASS,5,5,"L01, L02, L03, L04, L05"
+ph_levels,PASS,"[1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0]","[1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0]",
+core_missing_values,PASS,0,0,
+Lab_L_range,PASS,"[10.702305399993463, 78.89477725276501]","""[0, 100]""",
+Lab_ab_broad_range,PASS,"[-13.42081856971844, 64.39385145885439]","""[-160, 160]""","Broad plausibility bound, not a substantive clipping rule."
+balanced_phone_ph_light_cells,PASS,195,195,Every phone x pH x light cell must contain exactly one image. Bad cells=0.
+rows_outside_expected_grid,PASS,0,0,
+one_strip_repeated_across_lights_per_phone_ph,PASS,39,39,Each phone x pH combination should use one strip observed under all light levels.
+strip_repeat_structure,PASS,"{""unique_strips"": 39, ""passing_strips"": 39}","{""unique_strips"": 39, ""passing_strips"": 39}",
+two_way_factorial_design_matrix_full_rank,PASS,"{""rank"": 99, ""columns"": 99, ""residual_df"": 96}","{""rank_equals_columns"": true, ""residual_df_positive"": true}",Planned model: pH + Phone + Light + pH:Phone + pH:Light + Phone:Light.

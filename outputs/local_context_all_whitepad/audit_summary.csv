@@ -1,0 +1,11 @@
+﻿metric,value
+rows_processed,195.0
+background_side_fallback_count,0.0
+background_bbox_clipped_count,0.0
+crop_touches_source_edge_count,0.0
+mean_roi_area_ratio_in_crop,0.2613193655284751
+mean_bg_area_ratio_in_crop,0.2613193655284751
+min_crop_width,200.0
+min_crop_height,155.0
+max_crop_width,377.0
+max_crop_height,657.0

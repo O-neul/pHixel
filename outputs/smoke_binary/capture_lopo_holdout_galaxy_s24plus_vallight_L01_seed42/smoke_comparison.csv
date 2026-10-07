@@ -1,0 +1,5 @@
+﻿method,accuracy,balanced_accuracy,macro_f1,best_val_macro_f1,best_epoch,augmentation_application_rate,elapsed_seconds
+baseline,0.5,0.5,0.3333333333333333,1.0,2,,174.34021306037903
+colorjitter,0.5,0.5,0.3333333333333333,1.0,3,,175.02571082115173
+nuisance,0.5,0.5,0.3333333333333333,1.0,1,0.48541666666666666,178.18623399734497
+nuisance_consistency,0.5,0.5,0.3333333333333333,1.0,1,1.0,188.2228696346283

@@ -1,0 +1,85 @@
+Strip-holdout failure diagnostics
+================================================================================
+
+Primary comparison: phone_spline minus spline_additive.
+Negative differences favor the numerator model.
+
+Primary basis count: 5
+
+Primary robust summary
+--------------------------------------------------------------------------------
+ basis_count   region  trim_fraction  n_strips  mean_difference  median_difference  trimmed_mean_difference  standard_deviation  minimum_difference  maximum_difference  proportion_numerator_better  proportion_denominator_better  bootstrap_ci_lower  bootstrap_ci_upper  bootstrap_probability_below_zero
+           5       bg            0.1        39         0.167250           0.036801                 0.086552            0.570846           -0.619290            2.658616                     0.461538                       0.538462            0.008991            0.359586                          0.019000
+           5 contrast            0.1        39         1.198685          -0.362385                 0.038064            6.312486           -6.341206           27.441067                     0.538462                       0.461538           -0.463451            3.267144                          0.097000
+           5      pad            0.1        39         1.090410          -0.956909                -0.053892            6.218651           -6.106872           27.169513                     0.538462                       0.461538           -0.526328            3.133087                          0.118333
+
+Primary subset sensitivity
+--------------------------------------------------------------------------------
+ basis_count   region                  subset                   included_ph  n_strips  mean_difference  median_difference  trimmed_mean_difference  standard_deviation  minimum_difference  maximum_difference  proportion_numerator_better  proportion_denominator_better  bootstrap_ci_lower  bootstrap_ci_upper  bootstrap_probability_below_zero
+           5       bg                  all_ph 1,2,3,4,5,6,7,8,9,10,11,12,13        39         0.167250           0.036801                 0.086552            0.570846           -0.619290            2.658616                     0.461538                       0.538462            0.008991            0.359586                          0.019000
+           5       bg        boundary_ph_1_13                          1,13         6         0.947105           0.658558                 0.947105            1.122026           -0.619290            2.658616                     0.166667                       0.833333            0.216739            1.677471                          0.000000
+           5       bg        interior_ph_2_12      2,3,4,5,6,7,8,9,10,11,12        33         0.025458          -0.001348                 0.016975            0.235562           -0.434779            0.713702                     0.515152                       0.484848           -0.049147            0.106979                          0.260333
+           5       bg strict_interior_ph_3_11           3,4,5,6,7,8,9,10,11        27         0.033496          -0.007212                 0.025600            0.254217           -0.434779            0.713702                     0.518519                       0.481481           -0.058739            0.131719                          0.262000
+           5       bg          highlighted_ph                          8,12         6        -0.068375          -0.056967                -0.068375            0.091012           -0.194467            0.036801                     0.833333                       0.166667           -0.128601           -0.008149                          0.984667
+           5       bg      non_highlighted_ph      1,2,3,4,5,6,7,9,10,11,13        33         0.210091           0.102017                 0.120980            0.611038           -0.619290            2.658616                     0.393939                       0.606061            0.022487            0.422439                          0.009000
+           5 contrast                  all_ph 1,2,3,4,5,6,7,8,9,10,11,12,13        39         1.198685          -0.362385                 0.038064            6.312486           -6.341206           27.441067                     0.538462                       0.461538           -0.463451            3.267144                          0.097000
+           5 contrast        boundary_ph_1_13                          1,13         6        11.117194           9.794995                11.117194           10.781012           -0.362385           27.441067                     0.166667                       0.833333            6.634464           15.599923                          0.000000
+           5 contrast        interior_ph_2_12      2,3,4,5,6,7,8,9,10,11,12        33        -0.604680          -1.337924                -0.781553            2.712656           -6.341206            7.502183                     0.606061                       0.393939           -1.471423            0.314914                          0.904667
+           5 contrast strict_interior_ph_3_11           3,4,5,6,7,8,9,10,11        27        -0.316776          -1.252669                -0.562944            2.638025           -3.507802            7.502183                     0.555556                       0.444444           -1.222112            0.687737                          0.748667
+           5 contrast          highlighted_ph                          8,12         6        -0.696625           0.352128                -0.696625            3.100333           -6.341206            2.161220                     0.333333                       0.666667           -2.207309            0.814058                          0.770333
+           5 contrast      non_highlighted_ph      1,2,3,4,5,6,7,9,10,11,13        33         1.543287          -0.968678                 0.090576            6.709769           -3.583032           27.441067                     0.575758                       0.424242           -0.450402            4.001051                          0.078333
+           5      pad                  all_ph 1,2,3,4,5,6,7,8,9,10,11,12,13        39         1.090410          -0.956909                -0.053892            6.218651           -6.106872           27.169513                     0.538462                       0.461538           -0.526328            3.133087                          0.118333
+           5      pad        boundary_ph_1_13                          1,13         6        10.418200           7.699294                10.418200           11.189660           -0.000986           27.169513                     0.166667                       0.833333            5.147611           15.688790                          0.000000
+           5      pad        interior_ph_2_12      2,3,4,5,6,7,8,9,10,11,12        33        -0.605552          -1.144439                -0.740247            2.660566           -6.106872            7.652551                     0.606061                       0.393939           -1.455843            0.299791                          0.914000
+           5      pad strict_interior_ph_3_11           3,4,5,6,7,8,9,10,11        27        -0.262414          -1.038435                -0.469355            2.581366           -3.982141            7.652551                     0.555556                       0.444444           -1.149411            0.737567                          0.715333
+           5      pad          highlighted_ph                          8,12         6        -0.604114           0.532057                -0.604114            2.954788           -6.106872            1.785508                     0.333333                       0.666667           -2.085857            0.877630                          0.752667
+           5      pad      non_highlighted_ph      1,2,3,4,5,6,7,9,10,11,13        33         1.398505          -1.038435                -0.031390            6.627374           -3.982141           27.169513                     0.575758                       0.424242           -0.581474            3.845627                          0.098000
+
+Primary channel summary
+--------------------------------------------------------------------------------
+ basis_count   region channel  n_strips  mean_difference  median_difference  trimmed_mean_difference  standard_deviation  minimum_difference  maximum_difference  proportion_numerator_better  proportion_denominator_better  bootstrap_ci_lower  bootstrap_ci_upper  bootstrap_probability_below_zero
+           5       bg       L        39         0.216286           0.063740                 0.112253            0.639657           -0.523102            3.159143                     0.461538                       0.538462            0.042207            0.432503                          0.003000
+           5       bg       a        39        -0.046725          -0.016379                -0.031847            0.188959           -0.979401            0.306383                     0.641026                       0.358974           -0.109590            0.005285                          0.962333
+           5       bg       b        39         0.030745           0.000681                 0.010861            0.115196           -0.131144            0.510261                     0.461538                       0.538462           -0.001370            0.069050                          0.031000
+           5 contrast       L        39         0.937792           0.434257                 0.327339            3.698949           -3.363724           15.962100                     0.384615                       0.615385           -0.085518            2.153327                          0.037333
+           5 contrast       a        39        -0.099313          -0.447013                -0.230614            2.342670           -5.341331            6.150663                     0.564103                       0.435897           -0.762028            0.581004                          0.618333
+           5 contrast       b        39         0.864144          -0.851786                -0.173427            5.785547           -5.257739           21.627878                     0.615385                       0.384615           -0.713872            2.765529                          0.160667
+           5      pad       L        39         0.787439           0.150329                 0.290861            3.183853           -2.946759           15.832002                     0.435897                       0.564103           -0.064191            1.844934                          0.034333
+           5      pad       a        39         0.013369          -0.284368                -0.132792            2.471279           -5.039485            6.878424                     0.589744                       0.410256           -0.682307            0.740182                          0.491000
+           5      pad       b        39         0.854663          -0.939189                -0.200388            5.867851           -5.277926           22.516402                     0.589744                       0.410256           -0.735598            2.796879                          0.169000
+
+Primary worst strips
+--------------------------------------------------------------------------------
+  region  rank                strip_id          phone  ph_nominal  mean_deltaE76_difference  rmse_L_difference  rmse_a_difference  rmse_b_difference
+      bg     1    STR_iphone16pro_ph01    iphone16pro         1.0                  2.658616           3.159143          -0.111870          -0.001566
+      bg     2 STR_galaxy_s24plus_ph01 galaxy_s24plus         1.0                  1.733303           1.897324           0.003244           0.270262
+      bg     3    STR_iphone16pro_ph03    iphone16pro         3.0                  0.713702           0.902265          -0.108056           0.000039
+      bg     4    STR_iphone13pro_ph13    iphone13pro        13.0                  0.688102           0.874882           0.118840          -0.058106
+      bg     5 STR_galaxy_s24plus_ph13 galaxy_s24plus        13.0                  0.629015           0.436048           0.230976           0.510261
+      bg     6    STR_iphone13pro_ph01    iphone13pro         1.0                  0.592886           0.426017           0.147549           0.217350
+      bg     7    STR_iphone16pro_ph11    iphone16pro        11.0                  0.421672           0.649436          -0.079722           0.021788
+      bg     8 STR_galaxy_s24plus_ph09 galaxy_s24plus         9.0                  0.381359           0.405047          -0.024070           0.041559
+      bg     9 STR_galaxy_s24plus_ph07 galaxy_s24plus         7.0                  0.300512           0.292174           0.004770           0.007797
+      bg    10 STR_galaxy_s24plus_ph04 galaxy_s24plus         4.0                  0.274841           0.153723           0.001074           0.062129
+contrast     1    STR_iphone16pro_ph13    iphone16pro        13.0                 27.441067          15.962100           5.466083          21.627878
+contrast     2 STR_galaxy_s24plus_ph13 galaxy_s24plus        13.0                 19.045300          -3.363724           1.150726          21.431378
+contrast     3 STR_galaxy_s24plus_ph01 galaxy_s24plus         1.0                 12.438268           7.994801           2.681355          10.233766
+contrast     4    STR_iphone16pro_ph11    iphone16pro        11.0                  7.502183          -1.801015           4.398024           8.295668
+contrast     5    STR_iphone16pro_ph01    iphone16pro         1.0                  7.151723          10.255770           6.150663          -4.420861
+contrast     6    STR_iphone13pro_ph07    iphone13pro         7.0                  3.751272           2.041202          -0.652667           4.515476
+contrast     7    STR_iphone16pro_ph03    iphone16pro         3.0                  3.326051           4.091489           0.556393           0.362540
+contrast     8    STR_iphone13pro_ph03    iphone13pro         3.0                  2.623958           1.696779           1.097432           1.769951
+contrast     9 STR_galaxy_s24plus_ph03 galaxy_s24plus         3.0                  2.300034          -2.613784           0.439022           2.932773
+contrast    10 STR_galaxy_s24plus_ph12 galaxy_s24plus        12.0                  2.161220           1.058798          -1.584930           2.961536
+     pad     1    STR_iphone16pro_ph13    iphone16pro        13.0                 27.169513          15.832002           6.878424          20.953110
+     pad     2 STR_galaxy_s24plus_ph13 galaxy_s24plus        13.0                 19.852611          -2.946759           1.387642          22.516402
+     pad     3 STR_galaxy_s24plus_ph01 galaxy_s24plus         1.0                 11.332543           5.164028           2.695340          10.600017
+     pad     4    STR_iphone16pro_ph11    iphone16pro        11.0                  7.652551          -1.212801           4.695932           8.371520
+     pad     5    STR_iphone16pro_ph01    iphone16pro         1.0                  4.066045           6.889909           6.268644          -4.600693
+     pad     6    STR_iphone13pro_ph07    iphone13pro         7.0                  3.452671           1.735252          -0.506008           4.539168
+     pad     7    STR_iphone13pro_ph03    iphone13pro         3.0                  2.948466           2.150013           1.136216           1.765262
+     pad     8    STR_iphone16pro_ph03    iphone16pro         3.0                  2.560419           3.131198           0.681344           0.394749
+     pad     9 STR_galaxy_s24plus_ph03 galaxy_s24plus         3.0                  2.477645          -1.127360          -0.178744           2.870921
+     pad    10 STR_galaxy_s24plus_ph12 galaxy_s24plus        12.0                  1.785508           0.989046          -1.884036           2.793117
+
+A positive mean but negative median indicates that a minority of large deterioration outliers dominate the average.

@@ -1,0 +1,4 @@
+﻿method,split,loss,accuracy,balanced_accuracy,macro_f1
+nuisance_consistency,train,0.006493518423387566,1.0,1.0,1.0
+nuisance_consistency,val,0.012663106057936182,1.0,1.0,1.0
+nuisance_consistency,test,2.335174802633432,0.2,0.4222222222222222,0.19411431805319748

@@ -1,0 +1,51 @@
+{
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\model_structure_comparison",
+  "rows": 195,
+  "schemes": [
+    "leave_one_cell_out",
+    "cyclic_light_block"
+  ],
+  "models": [
+    "main_effects",
+    "additive_nuisance",
+    "ph_dependent_interactions"
+  ],
+  "bootstrap_repetitions": 2000,
+  "seed": 42,
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "purpose": "diagnose whether pH-dependent interactions improve within-design held-out Lab prediction",
+  "not_claimed": "This is not unseen-phone or unseen-factor-level generalization.",
+  "primary_comparison": "ph_dependent_interactions minus additive_nuisance; negative error differences favor the full interaction model",
+  "bootstrap": "paired errors averaged by strip and resampled within phone",
+  "limitations": [
+    "Other light observations from the same strip remain in training; this is intentional because the analysis tests factorial structure rather than unseen-strip prediction.",
+    "Categorical interaction models cannot directly predict a phone level absent from training, so LOPO is not used here."
+  ]
+}

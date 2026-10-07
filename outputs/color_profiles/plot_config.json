@@ -1,0 +1,616 @@
+{
+  "input_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output_directory": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\color_profiles",
+  "rows": 195,
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "regions": [
+    "pad",
+    "bg",
+    "contrast"
+  ],
+  "components": [
+    "L",
+    "a",
+    "b"
+  ],
+  "uncertainty": "range",
+  "highlight_ph": [
+    8.0,
+    12.0
+  ],
+  "dpi": 180,
+  "save_pdf": false,
+  "number_of_figure_files": 54,
+  "diagnostic_summary": {
+    "pad": {
+      "phone": {
+        "top_ph_by_max_pairwise_deltaE": [
+          {
+            "ph_nominal": 11.0,
+            "maximum_pairwise_deltaE76": 31.61858719827304
+          },
+          {
+            "ph_nominal": 12.0,
+            "maximum_pairwise_deltaE76": 28.72102610074892
+          },
+          {
+            "ph_nominal": 13.0,
+            "maximum_pairwise_deltaE76": 26.14087581256715
+          },
+          {
+            "ph_nominal": 10.0,
+            "maximum_pairwise_deltaE76": 25.909306790034265
+          },
+          {
+            "ph_nominal": 7.0,
+            "maximum_pairwise_deltaE76": 25.47940034308091
+          }
+        ],
+        "top_interaction_ph_by_component": {
+          "L": [
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 4.088593954450286
+            },
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 3.8732978501346604
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 2.7080734543450986
+            },
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 2.440093545429152
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 2.437027997077358
+            }
+          ],
+          "a": [
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 6.0657771736026005
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 4.213638912921663
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 3.3979730497091336
+            },
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 3.1377661638432177
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 2.3245474609488395
+            }
+          ],
+          "b": [
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 7.417234664564936
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 4.541576558898824
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 4.4356569045017284
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 3.3218714118855504
+            },
+            {
+              "ph_nominal": 9.0,
+              "interaction_rms": 3.1229629553255664
+            }
+          ]
+        }
+      },
+      "light": {
+        "top_ph_by_max_pairwise_deltaE": [
+          {
+            "ph_nominal": 3.0,
+            "maximum_pairwise_deltaE76": 4.622971823346113
+          },
+          {
+            "ph_nominal": 1.0,
+            "maximum_pairwise_deltaE76": 4.169476036993449
+          },
+          {
+            "ph_nominal": 6.0,
+            "maximum_pairwise_deltaE76": 3.9117656622050982
+          },
+          {
+            "ph_nominal": 5.0,
+            "maximum_pairwise_deltaE76": 3.8076593131552565
+          },
+          {
+            "ph_nominal": 7.0,
+            "maximum_pairwise_deltaE76": 3.7885597323066933
+          }
+        ],
+        "top_interaction_ph_by_component": {
+          "L": [
+            {
+              "ph_nominal": 10.0,
+              "interaction_rms": 0.7242602713197107
+            },
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 0.6964766548058392
+            },
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 0.6787280335351412
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.6681405961977206
+            },
+            {
+              "ph_nominal": 3.0,
+              "interaction_rms": 0.6207152002780182
+            }
+          ],
+          "a": [
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.42403911870974625
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.3918563538255236
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.3367062619185493
+            },
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 0.3113440460391741
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 0.27125025283864634
+            }
+          ],
+          "b": [
+            {
+              "ph_nominal": 7.0,
+              "interaction_rms": 0.5972791786687016
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 0.5766697566418928
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.5364403857282091
+            },
+            {
+              "ph_nominal": 3.0,
+              "interaction_rms": 0.5307534703943602
+            },
+            {
+              "ph_nominal": 10.0,
+              "interaction_rms": 0.4867260002305504
+            }
+          ]
+        }
+      }
+    },
+    "bg": {
+      "phone": {
+        "top_ph_by_max_pairwise_deltaE": [
+          {
+            "ph_nominal": 6.0,
+            "maximum_pairwise_deltaE76": 12.275674422081483
+          },
+          {
+            "ph_nominal": 5.0,
+            "maximum_pairwise_deltaE76": 12.070020398917569
+          },
+          {
+            "ph_nominal": 4.0,
+            "maximum_pairwise_deltaE76": 11.976604071908927
+          },
+          {
+            "ph_nominal": 9.0,
+            "maximum_pairwise_deltaE76": 11.903813696457993
+          },
+          {
+            "ph_nominal": 3.0,
+            "maximum_pairwise_deltaE76": 11.4992450266562
+          }
+        ],
+        "top_interaction_ph_by_component": {
+          "L": [
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.7312287144382713
+            },
+            {
+              "ph_nominal": 8.0,
+              "interaction_rms": 0.704134070820579
+            },
+            {
+              "ph_nominal": 10.0,
+              "interaction_rms": 0.6448042875556518
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.635763197137782
+            },
+            {
+              "ph_nominal": 9.0,
+              "interaction_rms": 0.5979878497763581
+            }
+          ],
+          "a": [
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 0.7604938635323873
+            },
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 0.37384974617804484
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.34362161881326614
+            },
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 0.3129949840004457
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.29179541210752935
+            }
+          ],
+          "b": [
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.24143030905527646
+            },
+            {
+              "ph_nominal": 9.0,
+              "interaction_rms": 0.23558505418249565
+            },
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 0.23165001085115816
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.2249747762597003
+            },
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 0.20602761531391026
+            }
+          ]
+        }
+      },
+      "light": {
+        "top_ph_by_max_pairwise_deltaE": [
+          {
+            "ph_nominal": 6.0,
+            "maximum_pairwise_deltaE76": 5.246970323741887
+          },
+          {
+            "ph_nominal": 4.0,
+            "maximum_pairwise_deltaE76": 4.964620315660534
+          },
+          {
+            "ph_nominal": 7.0,
+            "maximum_pairwise_deltaE76": 4.933612816081315
+          },
+          {
+            "ph_nominal": 5.0,
+            "maximum_pairwise_deltaE76": 4.879322899719771
+          },
+          {
+            "ph_nominal": 3.0,
+            "maximum_pairwise_deltaE76": 4.845857249211514
+          }
+        ],
+        "top_interaction_ph_by_component": {
+          "L": [
+            {
+              "ph_nominal": 3.0,
+              "interaction_rms": 0.674892396706587
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 0.5836188521074431
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.515400324020938
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.4883058145830271
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.4635295668935944
+            }
+          ],
+          "a": [
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.26417548582506734
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.24382644305958973
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.23536976295893725
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.16331802035462759
+            },
+            {
+              "ph_nominal": 9.0,
+              "interaction_rms": 0.13313149331743437
+            }
+          ],
+          "b": [
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.37048864327057884
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.35890778311984933
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.2743333777385524
+            },
+            {
+              "ph_nominal": 9.0,
+              "interaction_rms": 0.20294183834190924
+            },
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 0.1993107636767321
+            }
+          ]
+        }
+      }
+    },
+    "contrast": {
+      "phone": {
+        "top_ph_by_max_pairwise_deltaE": [
+          {
+            "ph_nominal": 12.0,
+            "maximum_pairwise_deltaE76": 29.172068923839902
+          },
+          {
+            "ph_nominal": 11.0,
+            "maximum_pairwise_deltaE76": 21.632883951712483
+          },
+          {
+            "ph_nominal": 13.0,
+            "maximum_pairwise_deltaE76": 19.39091995457309
+          },
+          {
+            "ph_nominal": 7.0,
+            "maximum_pairwise_deltaE76": 18.25046763763922
+          },
+          {
+            "ph_nominal": 10.0,
+            "maximum_pairwise_deltaE76": 16.517743673935882
+          }
+        ],
+        "top_interaction_ph_by_component": {
+          "L": [
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 4.388788006659933
+            },
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 3.906661547225541
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 3.1235060738290983
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 2.6613756970192113
+            },
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 2.5776311975182806
+            }
+          ],
+          "a": [
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 6.016971871751159
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 4.063101850824827
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 3.18591136935308
+            },
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 3.155057562632086
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 2.343906534840606
+            }
+          ],
+          "b": [
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 7.45435009077459
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 4.465201908952144
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 4.288587889735502
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 3.2959656667909694
+            },
+            {
+              "ph_nominal": 7.0,
+              "interaction_rms": 3.071626985925048
+            }
+          ]
+        }
+      },
+      "light": {
+        "top_ph_by_max_pairwise_deltaE": [
+          {
+            "ph_nominal": 12.0,
+            "maximum_pairwise_deltaE76": 3.6810945165713753
+          },
+          {
+            "ph_nominal": 4.0,
+            "maximum_pairwise_deltaE76": 3.4127126332364632
+          },
+          {
+            "ph_nominal": 6.0,
+            "maximum_pairwise_deltaE76": 3.393116435313175
+          },
+          {
+            "ph_nominal": 11.0,
+            "maximum_pairwise_deltaE76": 3.2805592889954034
+          },
+          {
+            "ph_nominal": 10.0,
+            "maximum_pairwise_deltaE76": 3.2257403479320903
+          }
+        ],
+        "top_interaction_ph_by_component": {
+          "L": [
+            {
+              "ph_nominal": 12.0,
+              "interaction_rms": 0.6201314534770991
+            },
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.5943875962266101
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 0.5846689240302692
+            },
+            {
+              "ph_nominal": 11.0,
+              "interaction_rms": 0.5401255273448318
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.49000882458700684
+            }
+          ],
+          "a": [
+            {
+              "ph_nominal": 5.0,
+              "interaction_rms": 0.5755256112505407
+            },
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.40648049461290087
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 0.358815545127761
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.34014095875820194
+            },
+            {
+              "ph_nominal": 13.0,
+              "interaction_rms": 0.3311684716435627
+            }
+          ],
+          "b": [
+            {
+              "ph_nominal": 1.0,
+              "interaction_rms": 0.6759045287360769
+            },
+            {
+              "ph_nominal": 2.0,
+              "interaction_rms": 0.6145931498494749
+            },
+            {
+              "ph_nominal": 4.0,
+              "interaction_rms": 0.5850347493190164
+            },
+            {
+              "ph_nominal": 7.0,
+              "interaction_rms": 0.5649359449744253
+            },
+            {
+              "ph_nominal": 6.0,
+              "interaction_rms": 0.526075256693535
+            }
+          ]
+        }
+      }
+    }
+  },
+  "interpretation_notes": [
+    "Phone mean profiles average over the five light conditions. Their error bars are descriptive and do not represent independent-strip uncertainty.",
+    "Light mean profiles average over the three phones. Error bars describe observed phone-to-phone variation.",
+    "Interaction residuals show deviations from an additive pH + domain profile. Persistent nonzero, nonparallel curves motivate formal interaction analysis in script 14.",
+    "CIE76 distances are descriptive Euclidean distances in Lab space and are not formal hypothesis tests."
+  ]
+}

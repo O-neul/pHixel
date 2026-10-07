@@ -1,0 +1,79 @@
+{
+  "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\local_context_all_whitepad\\local_context_manifest.csv",
+  "factorial_table": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "library_mode": "strict_fold_training_only",
+  "manifest_audit": {
+    "phone_column": "phone",
+    "light_column": "light",
+    "ph_column": "ph_nominal",
+    "image_column": "model_input_path",
+    "mask_column": null,
+    "mask_mode": "manifest_roi_model_box"
+  },
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "validation_lights": [
+    "L01",
+    "L03",
+    "L05"
+  ],
+  "seeds": [
+    42,
+    123
+  ],
+  "methods": [
+    "baseline",
+    "colorjitter",
+    "global_empirical",
+    "hybrid_empirical"
+  ],
+  "n_folds": 9,
+  "binary_task": "acidic pH 1-6 vs alkaline pH 8-13; pH7 excluded",
+  "anti_leakage_rule": {
+    "fold_library_rows": "exact classifier-training cells only",
+    "holdout_phone_in_library": false,
+    "validation_light_in_library": false,
+    "pH7_in_library": false,
+    "expected_training_rows_per_fold": 96
+  },
+  "augmentation": {
+    "probability": 0.7,
+    "background_strength": 0.5,
+    "global_contrast_strength": 0.5,
+    "trajectory_strength": 0.5,
+    "knot_count": 4,
+    "trajectory_min_ph": 2.0,
+    "trajectory_max_ph": 12.0,
+    "trajectory_boundary_policy": "pH-dependent term disabled outside the internal range",
+    "roi_box_frac_fallback": [
+      0.52,
+      0.08,
+      0.98,
+      0.92
+    ],
+    "mask_feather_px": 16.0
+  },
+  "training": {
+    "image_size": 224,
+    "batch_size": 16,
+    "head_epochs": 4,
+    "finetune_epochs": 8,
+    "patience": 3,
+    "head_lr": 0.001,
+    "finetune_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "pretrained": true
+  },
+  "decision_rule": "Hybrid macro-F1 must exceed baseline and global empirical overall, and in at least two-thirds of holdout phones.",
+  "important_note": "This strict rerun is a leakage correction, not a hyperparameter search. Keep all augmentation/training settings fixed from the previous pilot."
+}

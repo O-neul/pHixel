@@ -1,0 +1,48 @@
+{
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\multivariate_lab",
+  "rows": 195,
+  "regions": [
+    "pad",
+    "bg",
+    "contrast"
+  ],
+  "scalings": [
+    "raw",
+    "standardized"
+  ],
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "method": "direct balanced multivariate effect decomposition with ASCA-style SVD",
+  "primary_comparison": "standardized Lab trace shares across regions",
+  "manova_note": "Pillai, Wilks, Hotelling-Lawley, and Roy statistics are descriptive only; no formal p-values are reported.",
+  "limitations": [
+    "Each phone x pH cell contains one physical strip.",
+    "The residual combines the three-way interaction with pure measurement/extraction error."
+  ]
+}

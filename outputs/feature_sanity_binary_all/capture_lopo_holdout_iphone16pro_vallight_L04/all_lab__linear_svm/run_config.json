@@ -1,0 +1,23 @@
+{
+  "feature_group": "all_lab",
+  "features": [
+    "pad_L",
+    "pad_a",
+    "pad_b",
+    "bg_L",
+    "bg_a",
+    "bg_b",
+    "contrast_L",
+    "contrast_a",
+    "contrast_b"
+  ],
+  "model": "linear_svm",
+  "selected_C": 0.01,
+  "seed": 42,
+  "labels": [
+    "acidic",
+    "alkaline"
+  ],
+  "train_only_standardization": true,
+  "class_weight": null
+}

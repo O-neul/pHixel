@@ -1,0 +1,34 @@
+{
+  "rows": {
+    "train": 104,
+    "val": 26,
+    "test": 65
+  },
+  "train_phones": [
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "validation_phones": [
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "test_phones": [
+    "galaxy_s24plus"
+  ],
+  "train_lights": [
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "validation_lights": [
+    "L01"
+  ],
+  "test_lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ]
+}

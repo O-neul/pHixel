@@ -1,0 +1,5 @@
+﻿decision_step,question,look_at,if_yes,if_no
+1,Is background/global nuisance reproducible enough for a new additive augmentation pilot?,Background nuisance share plus prior augmentation results.,A small redesigned global-nuisance pilot is justified.,Do not repeat empirical nuisance augmentation yet.
+2,Does ridge-stabilized phone-specific pH structure improve unseen-strip interior interpolation?,Pad/Contrast ridge_rcs_interior_deltaE_difference and CI.,A pH-conditioned trajectory augmentation pilot is scientifically motivated.,Do not encode phone x pH trajectories from the current dataset.
+3,Are pH 1 and 13 stable after RCS + ridge?,Pad/Contrast ridge_rcs_boundary_deltaE_difference.,A pilot may cover the full pH range.,Restrict to interpolation pH or collect boundary replicates.
+4,Would the new experiment separate strip variation from phone variation?,Use repeated independent strips and the same strip across phones/lights; estimate augmentation only from training folds.,Proceed with a small pilot first.,Use the current negative augmentation result in the paper instead of repeating the experiment.

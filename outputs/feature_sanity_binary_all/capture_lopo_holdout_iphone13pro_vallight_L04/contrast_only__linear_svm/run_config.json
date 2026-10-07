@@ -1,0 +1,17 @@
+{
+  "feature_group": "contrast_only",
+  "features": [
+    "contrast_L",
+    "contrast_a",
+    "contrast_b"
+  ],
+  "model": "linear_svm",
+  "selected_C": 0.01,
+  "seed": 42,
+  "labels": [
+    "acidic",
+    "alkaline"
+  ],
+  "train_only_standardization": true,
+  "class_weight": null
+}

@@ -1,0 +1,10 @@
+﻿fold_id,holdout_phone,validation_light,n_train,n_val,n_test
+holdout_galaxy_s24plus__val_L01,galaxy_s24plus,L01,96,24,60
+holdout_galaxy_s24plus__val_L03,galaxy_s24plus,L03,96,24,60
+holdout_galaxy_s24plus__val_L05,galaxy_s24plus,L05,96,24,60
+holdout_iphone13pro__val_L01,iphone13pro,L01,96,24,60
+holdout_iphone13pro__val_L03,iphone13pro,L03,96,24,60
+holdout_iphone13pro__val_L05,iphone13pro,L05,96,24,60
+holdout_iphone16pro__val_L01,iphone16pro,L01,96,24,60
+holdout_iphone16pro__val_L03,iphone16pro,L03,96,24,60
+holdout_iphone16pro__val_L05,iphone16pro,L05,96,24,60

@@ -1,0 +1,10 @@
+﻿evidence_id,question,value,direction,interpretation_rule
+E1,Is background primarily nuisance?,0.9310682544553236,Higher supports nuisance dominance.,>0.8 is strong descriptive dominance.
+E2,Does contrast reduce global nuisance vs pad?,0.089340989272604,Positive means nuisance reduction.,Use magnitude descriptively.
+E3,Does contrast increase relative pH signal?,0.08309007166529958,Positive means higher pH signal share.,Use magnitude descriptively.
+E4_pad,Does categorical pH-dependent interaction improve held-out cells in pad?,-3.622749919910978,Negative favors interaction.,CI upper < 0 = strong within-cell evidence.
+E5_pad,Does ridge RCS phone trajectory improve unseen-strip interior pH in pad?,-0.6358015690834217,Negative favors phone-specific RCS.,CI upper < 0 = strong transferable-structure evidence; mean < 0 with CI crossing 0 = suggestive.
+E6_pad,Is boundary prediction stabilized in pad?,3.1561053435913813,Near/below 0 is favorable.,Large positive values mean boundary-conditioned augmentation remains risky.
+E4_contrast,Does categorical pH-dependent interaction improve held-out cells in contrast?,-3.809381618794056,Negative favors interaction.,CI upper < 0 = strong within-cell evidence.
+E5_contrast,Does ridge RCS phone trajectory improve unseen-strip interior pH in contrast?,-0.7883348259624847,Negative favors phone-specific RCS.,CI upper < 0 = strong transferable-structure evidence; mean < 0 with CI crossing 0 = suggestive.
+E6_contrast,Is boundary prediction stabilized in contrast?,3.2891984163221,Near/below 0 is favorable.,Large positive values mean boundary-conditioned augmentation remains risky.

@@ -1,0 +1,83 @@
+{
+  "method": "nuisance",
+  "best_epoch": 1,
+  "best_val_macro_f1": 1.0,
+  "elapsed_seconds": 178.18623399734497,
+  "rows": {
+    "train": 96,
+    "val": 24,
+    "test": 60
+  },
+  "normalization": {
+    "mean": [
+      0.6268087029457092,
+      0.6331304311752319,
+      0.6160215735435486
+    ],
+    "std": [
+      0.10298749059438705,
+      0.10756745934486389,
+      0.11459753662347794
+    ]
+  },
+  "augmentation_stats": {
+    "calls": 480,
+    "applied": 233,
+    "application_rate": 0.48541666666666666,
+    "target_phone_counts": {
+      "iphone16pro": 110,
+      "iphone13pro": 123
+    },
+    "target_light_counts": {
+      "L04": 46,
+      "L02": 60,
+      "L05": 71,
+      "L03": 56
+    },
+    "pad_total_delta_e": {
+      "n": 233,
+      "mean": 5.789047933766228,
+      "q95": 9.698491744291953,
+      "maximum": 9.815445611169329
+    }
+  },
+  "args": {
+    "manifest": "data/processed/capture_manifest.csv",
+    "split_file": ".\\data\\splits\\capture_lopo_holdout_galaxy_s24plus_vallight_L01.csv",
+    "decomposition_dir": ".\\outputs\\decomposition_binary\\capture_lopo_holdout_galaxy_s24plus_vallight_L01",
+    "annotation_dir": ".\\data\\raw\\captures\\annotations",
+    "output_dir": ".\\outputs\\smoke_binary\\capture_lopo_holdout_galaxy_s24plus_vallight_L01_seed42",
+    "methods": "baseline,colorjitter,nuisance,nuisance_consistency",
+    "model": "resnet18",
+    "pretrained": false,
+    "epochs": 5,
+    "patience": 5,
+    "batch_size": 8,
+    "image_size": 224,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "seed": 42,
+    "task": "binary",
+    "use_class_weights": false,
+    "roi_label": "roi",
+    "nuisance_probability": 0.5,
+    "sampler": "structured",
+    "phone_scale": 1.0,
+    "light_scale": 1.0,
+    "interaction_scale": 0.5,
+    "residual_scale": 0.0,
+    "overall_scale": 1.0,
+    "feather_radius": 24.0,
+    "allow_same_condition": false,
+    "jitter_brightness": 0.2,
+    "jitter_contrast": 0.2,
+    "jitter_saturation": 0.2,
+    "jitter_hue": 0.05,
+    "consistency_weight": 0.5,
+    "consistency_aug_probability": 1.0,
+    "limit_train": 0,
+    "limit_val": 0,
+    "limit_test": 0
+  }
+}

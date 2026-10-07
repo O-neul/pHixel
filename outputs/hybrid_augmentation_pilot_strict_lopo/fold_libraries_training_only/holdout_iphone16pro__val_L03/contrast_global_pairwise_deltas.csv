@@ -1,0 +1,3 @@
+﻿source_id,target_id,source_phone,target_phone,delta_L,delta_a,delta_b,deltaE76,delta_type
+galaxy_s24plus,iphone13pro,galaxy_s24plus,iphone13pro,-11.11021169941895,-1.3670543563445747,-9.272085698793457,14.535378042035115,global_phone_contrast
+iphone13pro,galaxy_s24plus,iphone13pro,galaxy_s24plus,11.11021169941895,1.3670543563445747,9.272085698793457,14.535378042035115,global_phone_contrast

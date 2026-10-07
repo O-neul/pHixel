@@ -1,0 +1,37 @@
+{
+  "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+  "split_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\splits\\capture_lopo_holdout_galaxy_s24plus_vallight_L04.csv",
+  "training_rows": 104,
+  "training_phones": [
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "training_lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L05"
+  ],
+  "training_ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "regions": [
+    "pad",
+    "bg",
+    "contrast"
+  ],
+  "model": "grand + pH + phone + light + phone×light + residual",
+  "important": "All effects were estimated from rows labelled train in the supplied split only."
+}

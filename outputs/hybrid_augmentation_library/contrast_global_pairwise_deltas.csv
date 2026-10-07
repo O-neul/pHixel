@@ -1,0 +1,7 @@
+﻿source_id,target_id,source_phone,target_phone,delta_L,delta_a,delta_b,deltaE76,delta_type
+galaxy_s24plus,iphone13pro,galaxy_s24plus,iphone13pro,-11.323885382021192,-1.3338822351234025,-9.106492448706895,14.592389341046474,global_phone_contrast
+galaxy_s24plus,iphone16pro,galaxy_s24plus,iphone16pro,-10.431556225006755,-0.7879033562917552,-3.404169792868494,11.001205795412215,global_phone_contrast
+iphone13pro,galaxy_s24plus,iphone13pro,galaxy_s24plus,11.323885382021192,1.3338822351234025,9.106492448706895,14.592389341046474,global_phone_contrast
+iphone13pro,iphone16pro,iphone13pro,iphone16pro,0.8923291570144372,0.5459788788316473,5.702322655838401,5.797484621098729,global_phone_contrast
+iphone16pro,galaxy_s24plus,iphone16pro,galaxy_s24plus,10.431556225006755,0.7879033562917552,3.404169792868494,11.001205795412215,global_phone_contrast
+iphone16pro,iphone13pro,iphone16pro,iphone13pro,-0.8923291570144372,-0.5459788788316473,-5.702322655838401,5.797484621098729,global_phone_contrast

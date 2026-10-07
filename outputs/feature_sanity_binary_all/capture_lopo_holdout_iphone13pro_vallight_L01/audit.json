@@ -1,0 +1,97 @@
+{
+  "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+  "split_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\splits\\capture_lopo_holdout_iphone13pro_vallight_L01.csv",
+  "output_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\feature_sanity_binary_all\\capture_lopo_holdout_iphone13pro_vallight_L01",
+  "task": "binary",
+  "labels": [
+    "acidic",
+    "alkaline"
+  ],
+  "ph7_excluded": true,
+  "class_weights": null,
+  "scaling": "StandardScaler fitted separately for each model using train rows only.",
+  "model_selection": "C selected using validation macro-F1, then validation balanced accuracy, validation accuracy, then smaller C.",
+  "test_usage": "Test evaluated only after selecting C from validation.",
+  "merge_columns": {
+    "manifest_image_id": "image_id",
+    "split_image_id": "image_id",
+    "split_column": "split"
+  },
+  "task_audit": {
+    "rows_before_task_filter": 195,
+    "excluded_ph7_rows": 15,
+    "rows_after_task_filter": 180,
+    "split_rows": {
+      "train": 96,
+      "val": 24,
+      "test": 60
+    },
+    "label_counts": {
+      "train": {
+        "acidic": 48,
+        "alkaline": 48
+      },
+      "val": {
+        "acidic": 12,
+        "alkaline": 12
+      },
+      "test": {
+        "acidic": 30,
+        "alkaline": 30
+      }
+    },
+    "expected_rows_for_current_design": {
+      "train": 96,
+      "val": 24,
+      "test": 60
+    }
+  },
+  "feature_groups": {
+    "bg_only": [
+      "bg_L",
+      "bg_a",
+      "bg_b"
+    ],
+    "pad_only": [
+      "pad_L",
+      "pad_a",
+      "pad_b"
+    ],
+    "contrast_only": [
+      "contrast_L",
+      "contrast_a",
+      "contrast_b"
+    ],
+    "pad_plus_bg": [
+      "pad_L",
+      "pad_a",
+      "pad_b",
+      "bg_L",
+      "bg_a",
+      "bg_b"
+    ],
+    "all_lab": [
+      "pad_L",
+      "pad_a",
+      "pad_b",
+      "bg_L",
+      "bg_a",
+      "bg_b",
+      "contrast_L",
+      "contrast_a",
+      "contrast_b"
+    ]
+  },
+  "models": [
+    "logistic",
+    "linear_svm"
+  ],
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "seed": 42
+}

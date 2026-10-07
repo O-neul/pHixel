@@ -1,0 +1,16 @@
+{
+  "decomposition_root": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition",
+  "run_glob": "capture_lopo_holdout_*",
+  "matched_run_count": 15,
+  "successful_run_count": 15,
+  "expected_run_count": 15,
+  "all_expected_runs_present": true,
+  "fit_rows": 135,
+  "fold_rows": 15,
+  "errors": [],
+  "plots": [
+    "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition_summary\\plots\\r2_by_value_column.png",
+    "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition_summary\\plots\\component_magnitude_by_region.png",
+    "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition_summary\\plots\\residual_q95_across_folds.png"
+  ]
+}

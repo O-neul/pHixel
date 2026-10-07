@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "region_effects": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_effects\\region_effect_summary.csv",
+    "multivariate": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\multivariate_lab\\effect_composition.csv",
+    "cell_model_comparison": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\model_structure_comparison\\paired_model_comparison.csv",
+    "strip_diagnostics": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\strip_holdout_diagnostics\\subset_sensitivity.csv",
+    "boundary_stabilized": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\boundary_stabilized_models\\subset_comparisons.csv",
+    "asca": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\asca_interaction_summary\\loading_summary.csv"
+  },
+  "augmentation_input": null,
+  "primary_knot_count": 4,
+  "purpose": "decision-ready synthesis; no automatic scientific decision"
+}

@@ -1,0 +1,4 @@
+﻿method,split,loss,accuracy,balanced_accuracy,macro_f1
+colorjitter,train,0.009338967277471966,1.0,1.0,1.0
+colorjitter,val,0.017359394347295165,1.0,1.0,1.0
+colorjitter,test,0.8330878026783466,0.5,0.5,0.3333333333333333

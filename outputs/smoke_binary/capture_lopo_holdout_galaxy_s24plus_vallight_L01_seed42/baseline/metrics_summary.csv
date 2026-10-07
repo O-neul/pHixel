@@ -1,0 +1,4 @@
+﻿method,split,loss,accuracy,balanced_accuracy,macro_f1
+baseline,train,0.0003268503323094289,1.0,1.0,1.0
+baseline,val,0.0005158594576641917,1.0,1.0,1.0
+baseline,test,2.716398857731838,0.5,0.5,0.3333333333333333

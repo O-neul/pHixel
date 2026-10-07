@@ -1,0 +1,367 @@
+{
+  "overall_status": "PASS",
+  "input_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+  "output_directory": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis",
+  "input_rows": 195,
+  "analysis_rows": 195,
+  "expected_design": {
+    "rows": 195,
+    "phones": 3,
+    "lights": 5,
+    "ph_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0
+    ],
+    "phone_ph_light_cell_count": 195,
+    "phone_ph_strip_count": 39
+  },
+  "observed_levels": {
+    "phones": [
+      "galaxy_s24plus",
+      "iphone13pro",
+      "iphone16pro"
+    ],
+    "lights": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05"
+    ],
+    "ph_levels": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0
+    ]
+  },
+  "column_map": {
+    "image_id": "image_id",
+    "strip_id": "strip_id",
+    "phone": "phone_id",
+    "light": "light_id",
+    "ph_nominal": "ph_nominal",
+    "image_path": "image_path"
+  },
+  "lab_extraction": {
+    "pad": {
+      "region": "pad",
+      "overall_source": "saved_lab",
+      "lab_columns": {
+        "pad_L": "pad_L",
+        "pad_a": "pad_a",
+        "pad_b": "pad_b"
+      },
+      "rgb_columns": {
+        "pad_R": null,
+        "pad_G": null,
+        "pad_B": "pad_b"
+      },
+      "rgb_scale": null,
+      "source_counts": {
+        "saved_lab": 195
+      }
+    },
+    "background": {
+      "region": "bg",
+      "overall_source": "saved_lab",
+      "lab_columns": {
+        "bg_L": "bg_L",
+        "bg_a": "bg_a",
+        "bg_b": "bg_b"
+      },
+      "rgb_columns": {
+        "bg_R": null,
+        "bg_G": null,
+        "bg_B": "bg_b"
+      },
+      "rgb_scale": null,
+      "source_counts": {
+        "saved_lab": 195
+      }
+    }
+  },
+  "warnings": [],
+  "failed_audit_items": [],
+  "warned_audit_items": [],
+  "design_matrix": {
+    "n_rows": 195,
+    "n_columns": 99,
+    "rank": 99,
+    "full_column_rank": true,
+    "residual_degrees_of_freedom": 96,
+    "column_names": [
+      "Intercept",
+      "ph[2.0]",
+      "ph[3.0]",
+      "ph[4.0]",
+      "ph[5.0]",
+      "ph[6.0]",
+      "ph[7.0]",
+      "ph[8.0]",
+      "ph[9.0]",
+      "ph[10.0]",
+      "ph[11.0]",
+      "ph[12.0]",
+      "ph[13.0]",
+      "phone[iphone13pro]",
+      "phone[iphone16pro]",
+      "light[L02]",
+      "light[L03]",
+      "light[L04]",
+      "light[L05]",
+      "ph_phone:ph[2.0]:phone[iphone13pro]",
+      "ph_phone:ph[2.0]:phone[iphone16pro]",
+      "ph_phone:ph[3.0]:phone[iphone13pro]",
+      "ph_phone:ph[3.0]:phone[iphone16pro]",
+      "ph_phone:ph[4.0]:phone[iphone13pro]",
+      "ph_phone:ph[4.0]:phone[iphone16pro]",
+      "ph_phone:ph[5.0]:phone[iphone13pro]",
+      "ph_phone:ph[5.0]:phone[iphone16pro]",
+      "ph_phone:ph[6.0]:phone[iphone13pro]",
+      "ph_phone:ph[6.0]:phone[iphone16pro]",
+      "ph_phone:ph[7.0]:phone[iphone13pro]",
+      "ph_phone:ph[7.0]:phone[iphone16pro]",
+      "ph_phone:ph[8.0]:phone[iphone13pro]",
+      "ph_phone:ph[8.0]:phone[iphone16pro]",
+      "ph_phone:ph[9.0]:phone[iphone13pro]",
+      "ph_phone:ph[9.0]:phone[iphone16pro]",
+      "ph_phone:ph[10.0]:phone[iphone13pro]",
+      "ph_phone:ph[10.0]:phone[iphone16pro]",
+      "ph_phone:ph[11.0]:phone[iphone13pro]",
+      "ph_phone:ph[11.0]:phone[iphone16pro]",
+      "ph_phone:ph[12.0]:phone[iphone13pro]",
+      "ph_phone:ph[12.0]:phone[iphone16pro]",
+      "ph_phone:ph[13.0]:phone[iphone13pro]",
+      "ph_phone:ph[13.0]:phone[iphone16pro]",
+      "ph_light:ph[2.0]:light[L02]",
+      "ph_light:ph[2.0]:light[L03]",
+      "ph_light:ph[2.0]:light[L04]",
+      "ph_light:ph[2.0]:light[L05]",
+      "ph_light:ph[3.0]:light[L02]",
+      "ph_light:ph[3.0]:light[L03]",
+      "ph_light:ph[3.0]:light[L04]",
+      "ph_light:ph[3.0]:light[L05]",
+      "ph_light:ph[4.0]:light[L02]",
+      "ph_light:ph[4.0]:light[L03]",
+      "ph_light:ph[4.0]:light[L04]",
+      "ph_light:ph[4.0]:light[L05]",
+      "ph_light:ph[5.0]:light[L02]",
+      "ph_light:ph[5.0]:light[L03]",
+      "ph_light:ph[5.0]:light[L04]",
+      "ph_light:ph[5.0]:light[L05]",
+      "ph_light:ph[6.0]:light[L02]",
+      "ph_light:ph[6.0]:light[L03]",
+      "ph_light:ph[6.0]:light[L04]",
+      "ph_light:ph[6.0]:light[L05]",
+      "ph_light:ph[7.0]:light[L02]",
+      "ph_light:ph[7.0]:light[L03]",
+      "ph_light:ph[7.0]:light[L04]",
+      "ph_light:ph[7.0]:light[L05]",
+      "ph_light:ph[8.0]:light[L02]",
+      "ph_light:ph[8.0]:light[L03]",
+      "ph_light:ph[8.0]:light[L04]",
+      "ph_light:ph[8.0]:light[L05]",
+      "ph_light:ph[9.0]:light[L02]",
+      "ph_light:ph[9.0]:light[L03]",
+      "ph_light:ph[9.0]:light[L04]",
+      "ph_light:ph[9.0]:light[L05]",
+      "ph_light:ph[10.0]:light[L02]",
+      "ph_light:ph[10.0]:light[L03]",
+      "ph_light:ph[10.0]:light[L04]",
+      "ph_light:ph[10.0]:light[L05]",
+      "ph_light:ph[11.0]:light[L02]",
+      "ph_light:ph[11.0]:light[L03]",
+      "ph_light:ph[11.0]:light[L04]",
+      "ph_light:ph[11.0]:light[L05]",
+      "ph_light:ph[12.0]:light[L02]",
+      "ph_light:ph[12.0]:light[L03]",
+      "ph_light:ph[12.0]:light[L04]",
+      "ph_light:ph[12.0]:light[L05]",
+      "ph_light:ph[13.0]:light[L02]",
+      "ph_light:ph[13.0]:light[L03]",
+      "ph_light:ph[13.0]:light[L04]",
+      "ph_light:ph[13.0]:light[L05]",
+      "phone_light:phone[iphone13pro]:light[L02]",
+      "phone_light:phone[iphone13pro]:light[L03]",
+      "phone_light:phone[iphone13pro]:light[L04]",
+      "phone_light:phone[iphone13pro]:light[L05]",
+      "phone_light:phone[iphone16pro]:light[L02]",
+      "phone_light:phone[iphone16pro]:light[L03]",
+      "phone_light:phone[iphone16pro]:light[L04]",
+      "phone_light:phone[iphone16pro]:light[L05]"
+    ]
+  },
+  "audit_items": [
+    {
+      "name": "row_count",
+      "status": "PASS",
+      "observed": 195,
+      "expected": 195,
+      "details": ""
+    },
+    {
+      "name": "unique_image_id_count",
+      "status": "PASS",
+      "observed": 195,
+      "expected": 195,
+      "details": "Each image_id must identify exactly one row."
+    },
+    {
+      "name": "nonempty_strip_id",
+      "status": "PASS",
+      "observed": 195,
+      "expected": 195,
+      "details": ""
+    },
+    {
+      "name": "phone_level_count",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3,
+      "details": "galaxy_s24plus, iphone13pro, iphone16pro"
+    },
+    {
+      "name": "light_level_count",
+      "status": "PASS",
+      "observed": 5,
+      "expected": 5,
+      "details": "L01, L02, L03, L04, L05"
+    },
+    {
+      "name": "ph_levels",
+      "status": "PASS",
+      "observed": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0
+      ],
+      "expected": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0
+      ],
+      "details": ""
+    },
+    {
+      "name": "core_missing_values",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "name": "Lab_L_range",
+      "status": "PASS",
+      "observed": [
+        10.702305399993463,
+        78.89477725276501
+      ],
+      "expected": "[0, 100]",
+      "details": ""
+    },
+    {
+      "name": "Lab_ab_broad_range",
+      "status": "PASS",
+      "observed": [
+        -13.42081856971844,
+        64.39385145885439
+      ],
+      "expected": "[-160, 160]",
+      "details": "Broad plausibility bound, not a substantive clipping rule."
+    },
+    {
+      "name": "balanced_phone_ph_light_cells",
+      "status": "PASS",
+      "observed": 195,
+      "expected": 195,
+      "details": "Every phone x pH x light cell must contain exactly one image. Bad cells=0."
+    },
+    {
+      "name": "rows_outside_expected_grid",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "name": "one_strip_repeated_across_lights_per_phone_ph",
+      "status": "PASS",
+      "observed": 39,
+      "expected": 39,
+      "details": "Each phone x pH combination should use one strip observed under all light levels."
+    },
+    {
+      "name": "strip_repeat_structure",
+      "status": "PASS",
+      "observed": {
+        "unique_strips": 39,
+        "passing_strips": 39
+      },
+      "expected": {
+        "unique_strips": 39,
+        "passing_strips": 39
+      },
+      "details": ""
+    },
+    {
+      "name": "two_way_factorial_design_matrix_full_rank",
+      "status": "PASS",
+      "observed": {
+        "rank": 99,
+        "columns": 99,
+        "residual_df": 96
+      },
+      "expected": {
+        "rank_equals_columns": true,
+        "residual_df_positive": true
+      },
+      "details": "Planned model: pH + Phone + Light + pH:Phone + pH:Light + Phone:Light."
+    }
+  ],
+  "important_limitations": [
+    "Each phone x pH cell contains one physical strip. Therefore the empirical pH x phone profile cannot be separated from strip-specific variation within that cell.",
+    "There is one observation per phone x pH x light cell. The three-way interaction and pure measurement error are not separately estimable and remain in the residual term of the planned two-way model.",
+    "If Lab was computed from mean RGB, it is an approximation to the mean of pixelwise Lab values."
+  ]
+}

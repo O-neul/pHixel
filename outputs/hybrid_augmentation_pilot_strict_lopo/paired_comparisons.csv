@@ -1,0 +1,7 @@
+﻿comparison,metric,n_matched_runs,mean_difference,median_difference,proportion_hybrid_better,proportion_equal
+hybrid_empirical minus baseline,macro_f1,18,-0.01106695033984049,0.0,0.2222222222222222,0.5
+hybrid_empirical minus baseline,balanced_accuracy,18,-0.010185185185185193,0.0,0.2222222222222222,0.5
+hybrid_empirical minus colorjitter,macro_f1,18,-0.0019590093290383203,-0.008363465194416553,0.4444444444444444,0.05555555555555555
+hybrid_empirical minus colorjitter,balanced_accuracy,18,-0.0018518518518518391,-0.008333333333333304,0.4444444444444444,0.05555555555555555
+hybrid_empirical minus global_empirical,macro_f1,18,-0.008805065895857155,0.0,0.3333333333333333,0.3333333333333333
+hybrid_empirical minus global_empirical,balanced_accuracy,18,-0.007407407407407406,0.0,0.3333333333333333,0.3888888888888889

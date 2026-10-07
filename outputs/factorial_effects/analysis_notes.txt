@@ -1,0 +1,18 @@
+Balanced factorial effect analysis
+================================================================================
+
+This implementation does not use statsmodels.
+Sums of squares are calculated directly from balanced factorial marginal means.
+
+Effect ratios
+--------------------------------------------------------------------------------
+pH signal ratio = SS_pH / corrected total SS
+nuisance-main ratio = (SS_phone + SS_light + SS_phone:light) / total SS
+pH-dependent interaction ratio = (SS_pH:phone + SS_pH:light) / total SS
+
+Region-level summary
+--------------------------------------------------------------------------------
+  region  n_features  mean_pH_signal_ratio  mean_nuisance_main_ratio  mean_pH_dependent_interaction_ratio  mean_residual_ratio  min_pH_signal_ratio  max_pH_signal_ratio
+      bg           3              0.010252                  0.931068                             0.033761             0.024919             0.002358             0.018371
+contrast           3              0.866904                  0.092465                             0.039812             0.000819             0.717049             0.971032
+     pad           3              0.783814                  0.181806                             0.033316             0.001064             0.479571             0.958217

@@ -1,0 +1,31 @@
+{
+  "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+  "split_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\splits\\capture_lopo_holdout_galaxy_s24plus_vallight_L01.csv",
+  "decomposition_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition\\capture_lopo_holdout_galaxy_s24plus_vallight_L01",
+  "annotation_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\annotations",
+  "train_rows_available": 104,
+  "selected_source_images": 12,
+  "generated_variants": 48,
+  "settings": {
+    "manifest": "data/processed/capture_manifest.csv",
+    "split_file": ".\\data\\splits\\capture_lopo_holdout_galaxy_s24plus_vallight_L01.csv",
+    "decomposition_dir": ".\\outputs\\decomposition\\capture_lopo_holdout_galaxy_s24plus_vallight_L01",
+    "annotation_dir": ".\\data\\raw\\captures\\annotations",
+    "output_dir": ".\\outputs\\previews\\capture_lopo_holdout_galaxy_s24plus_vallight_L01",
+    "roi_label": "roi",
+    "max_images": 12,
+    "variants_per_image": 4,
+    "seed": 42,
+    "selection": "balanced_conditions",
+    "sampler": "structured",
+    "phone_scale": 1.0,
+    "light_scale": 1.0,
+    "interaction_scale": 0.5,
+    "residual_scale": 0.0,
+    "overall_scale": 1.0,
+    "feather_radius": 24.0,
+    "allow_same_condition": false,
+    "image_width": 360
+  },
+  "important": "Only train rows and the matching train-only nuisance vector library were used. No validation-light or held-out-phone image was used to generate previews."
+}

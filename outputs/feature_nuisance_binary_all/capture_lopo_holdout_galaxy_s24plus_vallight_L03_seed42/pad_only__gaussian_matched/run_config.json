@@ -1,0 +1,13 @@
+{
+  "feature_group": "pad_only",
+  "features": [
+    "pad_L",
+    "pad_a",
+    "pad_b"
+  ],
+  "method": "gaussian_matched",
+  "selected_C": 0.01,
+  "train_original_rows": 96,
+  "train_total_rows": 480,
+  "seed": 42
+}

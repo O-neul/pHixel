@@ -1,0 +1,41 @@
+{
+  "rows": {
+    "train": 96,
+    "val": 24,
+    "test": 60
+  },
+  "train_phones": [
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "validation_phones": [
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "test_phones": [
+    "galaxy_s24plus"
+  ],
+  "train_lights": [
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "validation_lights": [
+    "L01"
+  ],
+  "test_lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "task": "binary",
+  "label_order": [
+    "acidic",
+    "alkaline"
+  ],
+  "rows_before_task_filter": 195,
+  "excluded_task_rows": 15
+}

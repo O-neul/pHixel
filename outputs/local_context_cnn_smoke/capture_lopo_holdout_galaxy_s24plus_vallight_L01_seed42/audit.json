@@ -1,0 +1,181 @@
+{
+  "local_context_manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\local_context_all_whitepad\\local_context_manifest.csv",
+  "split_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\splits\\capture_lopo_holdout_galaxy_s24plus_vallight_L01.csv",
+  "decomposition_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition_binary\\capture_lopo_holdout_galaxy_s24plus_vallight_L01",
+  "output_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\local_context_cnn_smoke\\capture_lopo_holdout_galaxy_s24plus_vallight_L01_seed42",
+  "device": "cuda",
+  "methods": [
+    "baseline",
+    "color_jitter",
+    "nuisance_structured"
+  ],
+  "labels": [
+    "acidic",
+    "alkaline"
+  ],
+  "task": "binary",
+  "ph7_excluded": true,
+  "local_context_audit": {
+    "config_path": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\local_context_all_whitepad\\local_context_config.json",
+    "config": {
+      "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+      "annotation_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\annotations",
+      "split_file": null,
+      "column_map": {
+        "image_id_column": "image_id",
+        "image_path_column": "image_path",
+        "phone_column": "phone_id",
+        "light_column": "light_id",
+        "ph_column": "ph_nominal",
+        "split_column": ""
+      },
+      "selection": "all",
+      "audit_ph": [
+        2.0,
+        6.0,
+        8.0,
+        9.0,
+        12.0
+      ],
+      "rows_available": 195,
+      "rows_processed": 195,
+      "geometry": {
+        "roi_label": "roi",
+        "bg_side": "left",
+        "bg_width_ratio": 1.0,
+        "bg_height_ratio": 1.0,
+        "bg_gap_ratio": 0.25,
+        "context_margin_ratio": 0.15
+      },
+      "model_input": {
+        "image_size": 224,
+        "resize_mode": "letterbox",
+        "letterbox_fill": "white"
+      },
+      "important": "The source nuisance-preview script contains no separate spatial background rectangle. This script defines an adjacent local background rectangle explicitly. Contact sheets must be checked for handwritten labels or other leakage."
+    },
+    "warnings": [],
+    "input_sizes": [
+      [
+        224,
+        224
+      ]
+    ]
+  },
+  "split_columns": {
+    "split_image_id_column": "image_id",
+    "split_column": "split"
+  },
+  "task_audit": {
+    "rows_after_ph7_exclusion": 180,
+    "split_rows": {
+      "train": 96,
+      "val": 24,
+      "test": 60
+    },
+    "label_counts": {
+      "train": {
+        "acidic": 48,
+        "alkaline": 48
+      },
+      "val": {
+        "acidic": 12,
+        "alkaline": 12
+      },
+      "test": {
+        "acidic": 30,
+        "alkaline": 30
+      }
+    }
+  },
+  "library_audit": {
+    "library_path": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition_binary\\capture_lopo_holdout_galaxy_s24plus_vallight_L01\\nuisance_vector_library.csv",
+    "library_rows": 288,
+    "library_images": 96,
+    "regions": [
+      "bg",
+      "contrast",
+      "pad"
+    ],
+    "config_path": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\decomposition_binary\\capture_lopo_holdout_galaxy_s24plus_vallight_L01\\decomposition_config.json",
+    "config": {
+      "manifest": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\processed\\capture_manifest.csv",
+      "split_file": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\splits\\capture_lopo_holdout_galaxy_s24plus_vallight_L01.csv",
+      "task": "binary",
+      "training_rows_before_task_filter": 104,
+      "excluded_ph7_rows": 8,
+      "training_rows": 96,
+      "training_phones": [
+        "iphone13pro",
+        "iphone16pro"
+      ],
+      "training_lights": [
+        "L02",
+        "L03",
+        "L04",
+        "L05"
+      ],
+      "training_ph_levels": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0
+      ],
+      "regions": [
+        "pad",
+        "bg",
+        "contrast"
+      ],
+      "model": "grand + pH + phone + light + phone×light + residual",
+      "important": "All effects were estimated from rows labelled train in the supplied split only. For task=binary, pH 7 rows were excluded before estimating every effect."
+    }
+  },
+  "model": {
+    "architecture": "resnet18",
+    "pretrained": true,
+    "freeze_backbone": true,
+    "imagenet_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "imagenet_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "training": {
+    "epochs": 12,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 4,
+    "seed": 42
+  },
+  "color_jitter": {
+    "brightness": 0.1,
+    "contrast": 0.1,
+    "saturation": 0.1,
+    "hue": 0.02
+  },
+  "nuisance": {
+    "sampler": "structured target phone-light cell",
+    "probability": 0.8,
+    "phone_scale": 1.0,
+    "light_scale": 1.0,
+    "interaction_scale": 0.5,
+    "residual_scale": 0.0,
+    "overall_scale": 1.0,
+    "feather_radius": 24.0
+  },
+  "important": "This is a development smoke test. Do not change hyperparameters based on the held-out-phone test result and report the same test result as an unbiased final estimate."
+}

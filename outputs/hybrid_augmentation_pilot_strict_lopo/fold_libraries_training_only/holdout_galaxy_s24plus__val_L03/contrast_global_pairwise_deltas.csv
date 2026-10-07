@@ -1,0 +1,3 @@
+﻿source_id,target_id,source_phone,target_phone,delta_L,delta_a,delta_b,deltaE76,delta_type
+iphone13pro,iphone16pro,iphone13pro,iphone16pro,0.8213164416116356,0.30966555484808644,6.511746246406368,6.570638677534201,global_phone_contrast
+iphone16pro,iphone13pro,iphone16pro,iphone13pro,-0.8213164416116356,-0.30966555484808644,-6.511746246406368,6.570638677534201,global_phone_contrast

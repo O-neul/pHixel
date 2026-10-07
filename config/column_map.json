@@ -1,0 +1,18 @@
+{
+  "image_id": "capture_id",
+  "image_path": "image_path_declared",
+  "phone_id": "phone",
+  "phone_label": "phone",
+  "light_id": "light",
+  "light_label": "light",
+  "ph_nominal": "ph_value",
+  "strip_id": "strip_id",
+
+  "pad_R": "R_pad_mean",
+  "pad_G": "G_pad_mean",
+  "pad_B": "B_pad_mean",
+
+  "bg_R": "R_bg_mean",
+  "bg_G": "G_bg_mean",
+  "bg_B": "B_bg_mean"
+}

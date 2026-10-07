@@ -1,0 +1,20 @@
+{
+  "feature_group": "pad_plus_bg",
+  "features": [
+    "pad_L",
+    "pad_a",
+    "pad_b",
+    "bg_L",
+    "bg_a",
+    "bg_b"
+  ],
+  "model": "logistic",
+  "selected_C": 0.01,
+  "seed": 42,
+  "labels": [
+    "acidic",
+    "alkaline"
+  ],
+  "train_only_standardization": true,
+  "class_weight": null
+}

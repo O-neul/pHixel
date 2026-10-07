@@ -1,0 +1,10 @@
+﻿fold_id,holdout_phone,validation_light,n_train,n_val,n_test,library_mode,n_library_rows,library_exact_train_match,target_phone_rows_in_library,validation_light_rows_in_library,pH7_rows_in_library,n_bg_vectors,n_global_contrast_vectors,n_trajectory_vectors
+holdout_galaxy_s24plus__val_L01,galaxy_s24plus,L01,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_galaxy_s24plus__val_L03,galaxy_s24plus,L03,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_galaxy_s24plus__val_L05,galaxy_s24plus,L05,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_iphone13pro__val_L01,iphone13pro,L01,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_iphone13pro__val_L03,iphone13pro,L03,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_iphone13pro__val_L05,iphone13pro,L05,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_iphone16pro__val_L01,iphone16pro,L01,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_iphone16pro__val_L03,iphone16pro,L03,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20
+holdout_iphone16pro__val_L05,iphone16pro,L05,96,24,60,strict_fold_training_only,96,True,0,0,0,56,2,20

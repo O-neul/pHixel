@@ -1,0 +1,19 @@
+﻿column,description,role
+image_id,Unique image/capture identifier,identifier
+strip_id,Physical strip identifier,identifier
+phone,Smartphone model/domain,factor
+light,Lighting condition,factor
+ph_nominal,"Nominal pH level, treated as a factor in factorial analysis",factor
+image_path,Source image path when available,metadata
+pad_L,Reaction/strip ROI CIE Lab lightness,response
+pad_a,Reaction/strip ROI CIE Lab green-red coordinate,response
+pad_b,Reaction/strip ROI CIE Lab blue-yellow coordinate,response
+bg_L,Local/background CIE Lab lightness,response
+bg_a,Local/background CIE Lab green-red coordinate,response
+bg_b,Local/background CIE Lab blue-yellow coordinate,response
+contrast_L,pad_L minus bg_L,derived response
+contrast_a,pad_a minus bg_a,derived response
+contrast_b,pad_b minus bg_b,derived response
+pad_deltaE_from_bg,Euclidean CIE76 distance between Pad and Background Lab,derived response
+pad_lab_source,Whether Pad Lab was saved directly or computed from mean RGB,provenance
+bg_lab_source,Whether Background Lab was saved directly or computed from mean RGB,provenance

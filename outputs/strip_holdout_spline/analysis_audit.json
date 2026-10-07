@@ -1,0 +1,57 @@
+{
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\strip_holdout_spline",
+  "rows": 195,
+  "n_strips": 39,
+  "n_folds": 39,
+  "images_per_fold": 5,
+  "basis_counts": [
+    4,
+    5,
+    6
+  ],
+  "primary_basis_count": 5,
+  "degree": 3,
+  "models": [
+    "spline_additive",
+    "phone_spline",
+    "full_spline_interactions"
+  ],
+  "bootstrap_repetitions": 3000,
+  "seed": 42,
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "lights": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "cross_validation": "leave one complete strip_id out; all five lights removed",
+  "primary_comparison": "phone_spline minus spline_additive; negative error differences favor phone-specific smooth pH trajectories",
+  "important_scope": "This tests interpolation of an unobserved phone x pH cell from neighboring pH levels. It does not test a second independent physical strip at the same phone x pH.",
+  "limitations": [
+    "Only one physical strip exists per phone x pH cell.",
+    "Spline smoothness is a modeling assumption and is examined with basis-count sensitivity analysis.",
+    "Boundary pH values are harder because one-sided interpolation is required."
+  ]
+}

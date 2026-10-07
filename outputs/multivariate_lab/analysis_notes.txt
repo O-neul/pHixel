@@ -1,0 +1,13 @@
+Multivariate Lab effect decomposition and ASCA
+================================================================================
+
+The standardized analysis is primary for comparing Pad, Background, and Contrast because L*, a*, and b* are placed on equal variance scales.
+
+Standardized multivariate composition
+--------------------------------------------------------------------------------
+  region      scaling  pH_signal_share  nuisance_main_share  pH_dependent_interaction_share  residual_share  all_share_sum  channel_center_L  channel_center_a  channel_center_b  channel_scale_L  channel_scale_a  channel_scale_b
+     pad standardized         0.783814             0.181806                        0.033316        0.001064            1.0         35.937796          9.945869         32.785070        12.653484        16.708058        17.613168
+      bg standardized         0.010252             0.931068                        0.033761        0.024919            1.0         71.366706         -1.145765          2.412488         4.490465         1.583867         1.701936
+contrast standardized         0.866904             0.092465                        0.039812        0.000819            1.0        -35.428910         11.091635         30.372582        10.854616        16.550604        17.567466
+
+ASCA loadings describe which Lab channels dominate each effect component. Their signs are arbitrary because singular vectors can be multiplied by -1 without changing the result.

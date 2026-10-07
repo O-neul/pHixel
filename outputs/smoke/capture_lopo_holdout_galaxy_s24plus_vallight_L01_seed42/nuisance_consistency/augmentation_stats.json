@@ -1,0 +1,21 @@
+{
+  "calls": 520,
+  "applied": 520,
+  "application_rate": 1.0,
+  "target_phone_counts": {
+    "iphone16pro": 259,
+    "iphone13pro": 261
+  },
+  "target_light_counts": {
+    "L05": 128,
+    "L04": 125,
+    "L02": 139,
+    "L03": 128
+  },
+  "pad_total_delta_e": {
+    "n": 520,
+    "mean": 5.160382621490262,
+    "q95": 9.188619398669704,
+    "maximum": 9.35949227709858
+  }
+}

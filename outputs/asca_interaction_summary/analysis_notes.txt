@@ -1,0 +1,20 @@
+ASCA pH x phone interpretation
+  region       term  explained_ratio_within_term  loading_L  loading_a  loading_b dominant_channel  dominant_loading  dominant_abs_loading
+      bg         pH                     0.642713  -0.938502  -0.292103   0.184092                L         -0.938502              0.938502
+      bg pH_x_phone                     0.685038   0.113041   0.958237  -0.262685                a          0.958237              0.958237
+contrast         pH                     0.670779   0.606462   0.375084   0.701082                b          0.701082              0.701082
+contrast pH_x_phone                     0.563379   0.800429  -0.495789   0.336908                L          0.800429              0.800429
+     pad         pH                     0.650042   0.511516   0.448313   0.733053                b          0.733053              0.733053
+     pad pH_x_phone                     0.580227   0.517762  -0.593438   0.616242                b          0.616242              0.616242
+
+Peak interactions
+  region          phone  peak_ph  peak_score  peak_abs_score
+      bg galaxy_s24plus     13.0   -0.421875        0.421875
+      bg    iphone13pro     13.0   -0.234821        0.234821
+      bg    iphone16pro     13.0    0.656696        0.656696
+contrast galaxy_s24plus     11.0    0.465263        0.465263
+contrast    iphone13pro     12.0   -0.814283        0.814283
+contrast    iphone16pro     12.0    0.636255        0.636255
+     pad galaxy_s24plus      2.0   -0.354513        0.354513
+     pad    iphone13pro     12.0   -0.831901        0.831901
+     pad    iphone16pro     12.0    0.667070        0.667070

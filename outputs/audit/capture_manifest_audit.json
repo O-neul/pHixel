@@ -1,0 +1,64 @@
+{
+  "source_features": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\captures_final_features.csv",
+  "source_image_dir": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\images",
+  "detected_column_mapping": {
+    "image_id": "capture_id",
+    "image_path": "image_path_declared",
+    "phone_id": "phone",
+    "phone_label": "phone",
+    "light_id": "light",
+    "light_label": "light",
+    "ph_nominal": "ph_value",
+    "strip_id": "strip_id",
+    "pad_L": null,
+    "pad_a": null,
+    "pad_b": null,
+    "pad_R": "R_pad_mean",
+    "pad_G": "G_pad_mean",
+    "pad_B": "B_pad_mean",
+    "bg_L": null,
+    "bg_a": null,
+    "bg_b": null,
+    "bg_R": "R_bg_mean",
+    "bg_G": "G_bg_mean",
+    "bg_B": "B_bg_mean"
+  },
+  "condition_counts": {
+    "rows": 195,
+    "phones": 3,
+    "lights": 5,
+    "ph_levels": 13,
+    "expected_full_factorial_rows": 195
+  },
+  "duplicate_condition_rows": 0,
+  "duplicate_image_id_rows": 0,
+  "missing_image_count": 0,
+  "missing_images_first_20": [],
+  "phone_levels": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "light_levels": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ]
+}

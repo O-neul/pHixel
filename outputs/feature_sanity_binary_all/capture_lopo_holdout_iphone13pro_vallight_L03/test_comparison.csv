@@ -1,0 +1,11 @@
+feature_group,features,n_features,model,selected_C,best_val_macro_f1,best_val_balanced_accuracy,test_loss,test_accuracy,test_balanced_accuracy,test_macro_f1,test_n
+contrast_only,"contrast_L,contrast_a,contrast_b",3,logistic,0.1,1.0,1.0,0.25800077695486945,1.0,1.0,1.0,60
+all_lab,"pad_L,pad_a,pad_b,bg_L,bg_a,bg_b,contrast_L,contrast_a,contrast_b",9,linear_svm,0.01,1.0,1.0,0.11727764332213046,1.0,1.0,1.0,60
+pad_only,"pad_L,pad_a,pad_b",3,logistic,0.1,1.0,1.0,0.26808242962154877,0.9833333333333333,0.9833333333333334,0.9833287024173382,60
+contrast_only,"contrast_L,contrast_a,contrast_b",3,linear_svm,0.01,1.0,1.0,0.14242919793493417,0.9833333333333333,0.9833333333333334,0.9833287024173382,60
+pad_plus_bg,"pad_L,pad_a,pad_b,bg_L,bg_a,bg_b",6,linear_svm,0.01,1.0,1.0,0.1520960056448148,0.9833333333333333,0.9833333333333334,0.9833287024173382,60
+pad_only,"pad_L,pad_a,pad_b",3,linear_svm,0.01,1.0,1.0,0.12254279374061218,0.9666666666666667,0.9666666666666667,0.9666295884315907,60
+pad_plus_bg,"pad_L,pad_a,pad_b,bg_L,bg_a,bg_b",6,logistic,0.01,1.0,1.0,0.5249377307911849,0.9166666666666666,0.9166666666666667,0.916083916083916,60
+all_lab,"pad_L,pad_a,pad_b,bg_L,bg_a,bg_b,contrast_L,contrast_a,contrast_b",9,logistic,0.01,1.0,1.0,0.4394110235611393,0.9166666666666666,0.9166666666666667,0.916083916083916,60
+bg_only,"bg_L,bg_a,bg_b",3,logistic,10.0,0.5804195804195804,0.5833333333333333,0.7276470264623495,0.5,0.5,0.3333333333333333,60
+bg_only,"bg_L,bg_a,bg_b",3,linear_svm,10.0,0.5208711433756805,0.5416666666666666,0.7201271231574723,0.5,0.5,0.3333333333333333,60

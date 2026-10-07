@@ -1,0 +1,39 @@
+{
+  "library_mode": "strict_fold_training_only",
+  "n_classifier_train_rows": 96,
+  "n_library_rows": 96,
+  "exact_training_cell_match": true,
+  "holdout_phone": "iphone16pro",
+  "holdout_phone_rows_in_library": 0,
+  "validation_light": "L01",
+  "validation_light_rows_in_library": 0,
+  "pH7_rows_in_library": 0,
+  "phones_used": [
+    "galaxy_s24plus",
+    "iphone13pro"
+  ],
+  "lights_used": [
+    "L02",
+    "L03",
+    "L04",
+    "L05"
+  ],
+  "ph_levels_used": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "n_background_vectors": 56,
+  "n_global_contrast_vectors": 2,
+  "n_trajectory_vectors": 20,
+  "critical_note": "No target-phone capture statistics and no validation-light capture statistics are used in this fold library."
+}

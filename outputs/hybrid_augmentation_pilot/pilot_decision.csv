@@ -1,0 +1,7 @@
+﻿criterion,passed,detail
+overall hybrid macro-F1 > baseline,True,0.909986 vs 0.899772
+overall hybrid macro-F1 > global empirical,True,0.909986 vs 0.884282
+hybrid beats baseline in at least 2/3 holdout phones,True,3/3 phones
+hybrid beats global empirical in at least 2/3 holdout phones,True,3/3 phones
+PRIMARY PILOT SUCCESS,True,Pre-specified success requires all four criteria above.
+secondary: hybrid macro-F1 > ColorJitter,True,0.909986 vs 0.890664

@@ -1,0 +1,29 @@
+{
+  "method": "baseline",
+  "best_global_epoch": 14,
+  "best_stage": "finetune",
+  "best_stage_epoch": 9,
+  "best_validation_metrics": {
+    "loss": 0.0020180534277945603,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 24
+  },
+  "pretrained": true,
+  "training_strategy": "head_warmup_then_layer4_finetune",
+  "batchnorm_statistics_frozen": true,
+  "warmup_epochs": 5,
+  "finetune_epochs": 15,
+  "head_learning_rate": 0.001,
+  "layer4_learning_rate": 0.0001,
+  "image_size": 224,
+  "jitter": {
+    "brightness": 0.1,
+    "contrast": 0.1,
+    "saturation": 0.1,
+    "hue": 0.02
+  },
+  "nuisance_probability": 0.8,
+  "seed": 42
+}

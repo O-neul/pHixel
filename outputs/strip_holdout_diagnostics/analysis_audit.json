@@ -1,0 +1,53 @@
+{
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\strip_holdout_spline\\cv_predictions.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\strip_holdout_diagnostics",
+  "primary_basis_count": 5,
+  "available_basis_counts": [
+    4,
+    5,
+    6
+  ],
+  "numerator_model": "phone_spline",
+  "denominator_model": "spline_additive",
+  "difference_direction": "numerator minus denominator; negative favors numerator",
+  "highlighted_ph": [
+    8.0,
+    12.0
+  ],
+  "trim_fraction": 0.1,
+  "bootstrap_repetitions": 3000,
+  "seed": 42,
+  "top_n": 10,
+  "n_prediction_rows": 5265,
+  "n_strip_pairs": 351,
+  "regions": [
+    "bg",
+    "contrast",
+    "pad"
+  ],
+  "phones": [
+    "galaxy_s24plus",
+    "iphone13pro",
+    "iphone16pro"
+  ],
+  "ph_levels": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+  ],
+  "notes": [
+    "pH-specific summaries contain only one strip per phone, so n=3 and are descriptive.",
+    "Bootstrap intervals resample strips within phone when multiple pH values are included.",
+    "Boundary pH values are diagnosed separately because smooth prediction uses information from only one side."
+  ]
+}

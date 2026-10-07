@@ -1,0 +1,23 @@
+{
+  "import_mode": "mixed_collected_directory",
+  "features": {
+    "source": "C:\\.Soyeon\\DS\\학부연구생\\DIC\\data\\collected\\captures_final_features.csv",
+    "destination": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\captures_final_features.csv",
+    "sha256": "0d242e6a85629efa807be8dd39c4e4f1725336743f0fa671d11ca5d733e7368c"
+  },
+  "images": {
+    "source": "C:\\.Soyeon\\DS\\학부연구생\\DIC\\data\\collected",
+    "destination": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\images",
+    "count": 390
+  },
+  "annotations": {
+    "source": "C:\\.Soyeon\\DS\\학부연구생\\DIC\\data\\collected",
+    "destination": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\captures\\annotations",
+    "count": 195
+  },
+  "external_qub": {
+    "source": "",
+    "destination": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\data\\raw\\external_qub\\three_smartphones",
+    "count": 0
+  }
+}
