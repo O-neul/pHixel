@@ -1,0 +1,27 @@
+﻿figure,file,source,caption
+Figure 1,Fig1_design_roi.png,figure1,
+Figure 2,Fig2_decomposition_asca.png,figure2,
+Figure 3,Fig3_gam_curves.png,figure3,
+Figure 4,Fig4_nuisance_mechanism.png,figure_mechanism,
+Figure 5,Fig5_calibration.png,figure_calibration,
+Figure 6,Fig6_validation.png,figure5,
+Figure 7,Fig7_simulation.png,figure7,
+Figure S1,S1_roi_montage_L01_ph2_6_12.jpg,background_roi_check/roi_montage_L01_ph2_6_12.jpg,"Pad and background ROIs for all phones at pH 2, 6, 12"
+Figure S2,S2_effect_composition_standardized.png,multivariate_lab/figures/effect_composition_standardized.png,Effect composition (script 15 version)
+Figure S3,S3_restricted_vs_unrestricted_main_effects.png,asca_permutation/figures/restricted_vs_unrestricted_main_effects.png,ASCA main-effect tests: strip-restricted vs image-level permutation
+Figure S4,S4_pc1_loading_intervals.png,asca_permutation/figures/pc1_loading_intervals.png,ASCA PC1 loadings for all regions and scalings
+Figure S5,S5_phone_curves_pad.png,gam_curves/figures/phone_curves_pad.png,"GAM curves, Pad"
+Figure S6,S6_phone_curves_bg.png,gam_curves/figures/phone_curves_bg.png,"GAM curves, Background"
+Figure S7,S7_k_sensitivity_shape_contrast.png,gam_curves/figures/k_sensitivity_shape_contrast.png,Basis / k sensitivity of the phone differences
+Figure S8,S8_total_differences_contrast.png,gam_curves/figures/total_differences_contrast.png,Total phone differences (offset + pH-dependent part)
+Figure S9,S9_residual_diagnostics_contrast.png,gam_curves/figures/residual_diagnostics_contrast.png,GAM residual diagnostics
+Figure S10,S10_strip_variance_reduction.png,gam_curves/figures/strip_variance_reduction.png,"Strip variance absorbed, all regions and specifications"
+Figure S11,S11_gam_rcs_consistency_pad.png,gam_strip_holdout/figures/gam_rcs_consistency_pad.png,"GAM vs RCS, Pad"
+Figure S12,S12_estimated_vs_true_contrast.png,gam_inverse_ph/figures/estimated_vs_true_contrast.png,"Estimated vs true pH, Contrast"
+Figure S13,S13_deltaE_vs_ph_gain_contrast.png,gam_inverse_ph/figures/deltaE_vs_ph_gain_contrast.png,Colour gain vs pH gain per strip
+Figure S14,S14_s1_rejection_rates.png,simulation/s1/figures/s1_rejection_rates.png,"Simulation S1, all scenarios"
+Figure S15,S15_s2_identification.png,simulation/figures/s2_identification.png,"Simulation S2, all cells"
+Figure S16,S16_s3_loso_differences.png,simulation/figures/s3_loso_differences.png,"Simulation S2-LOSO / S3, all models"
+Figure S17,S17_augmentation_pilot.png,hybrid_augmentation_pilot_strict_lopo/method_summary.csv,Initial augmentation experiment (motivation)
+Figure S18,S18_gam_differences.png,figure4,pH-dependent phone differences with simultaneous bands
+Figure S19,S19_inverse_ph.png,figure6,"Inverse pH error by pH, known phone (LOSO)"
