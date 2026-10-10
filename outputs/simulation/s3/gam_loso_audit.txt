@@ -1,0 +1,4 @@
+Simulation LOSO, GAM (script 31)
+================================================================================
+data sets: 400 | succeeded: 400 | cores: 6
+elapsed: 36.9 min
