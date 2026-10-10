@@ -1,0 +1,33 @@
+{
+  "input": "/Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv",
+  "output": "/Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/asca_permutation",
+  "rows": 195,
+  "scalings": [
+    "raw",
+    "standardized"
+  ],
+  "n_permutations": 9999,
+  "n_bootstrap": 2000,
+  "seed": 20261009,
+  "statistic": "trace pseudo-F with full three-factor residual (df=96)",
+  "schemes": {
+    "restricted_pH": "whole strips permuted across pH within phone",
+    "restricted_phone": "whole strips permuted across phone within pH",
+    "restricted_light": "light labels permuted within strip",
+    "unrestricted_main": "row labels permuted across all rows",
+    "interactions": "Freedman-Lane, reduced-model residuals permuted across all rows"
+  },
+  "p_value": "(n_exceed + 1) / (n_permutations + 1)",
+  "multiplicity": "Holm within region x scaling over the six terms (restricted scheme)",
+  "bootstrap": "residual bootstrap conditional on observed strips; PC1 sign-aligned to observed",
+  "verification_against_script15": {
+    "checked": true,
+    "rows_compared": 42,
+    "max_share_difference": 6.661338147750939e-16
+  },
+  "limitations": [
+    "One strip per phone x pH cell: pH x phone is tested against within-strip residual variation, not against strip-to-strip variation.",
+    "The residual combines the three-way interaction with measurement error.",
+    "Bootstrap intervals ignore strip sampling variability."
+  ]
+}

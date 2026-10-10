@@ -1,0 +1,115 @@
+ASCA permutation inference
+================================================================================
+
+Permutations: 9999, bootstrap: 2000, seed: 20261009
+Script 15 verification: {'checked': True, 'rows_compared': 42, 'max_share_difference': 6.661338147750939e-16}
+
+Permutation tests
+  region      scaling        scheme          term  trace_share  pseudo_f  null_f_q95  p_value  p_holm_within_region
+     pad          raw    restricted            pH       0.8375      6863        3011   0.0001                0.0006
+     pad          raw    restricted         phone       0.1262      6207       962.3   0.0001                0.0006
+     pad          raw    restricted         light     0.001262     31.03       2.067   0.0001                0.0006
+     pad          raw freedman_lane    pH_x_phone      0.03249     133.1       1.412   0.0001                0.0006
+     pad          raw freedman_lane    pH_x_light    0.0007393     1.515       1.311   0.0047                0.0047
+     pad          raw freedman_lane phone_x_light      0.00077     9.465       1.676   0.0001                0.0006
+     pad          raw  unrestricted            pH       0.8375      6863       1.579   0.0001                   NaN
+     pad          raw  unrestricted         phone       0.1262      6207        2.36   0.0001                   NaN
+     pad          raw  unrestricted         light     0.001262     31.03           2   0.0001                   NaN
+     pad standardized    restricted            pH       0.7838      5896        2487   0.0001                0.0006
+     pad standardized    restricted         phone       0.1799      8117        1250   0.0001                0.0006
+     pad standardized    restricted         light     0.001184     26.71       2.035   0.0001                0.0006
+     pad standardized freedman_lane    pH_x_phone       0.0324     121.9       1.387   0.0001                0.0006
+     pad standardized freedman_lane    pH_x_light    0.0009157     1.722       1.335   0.0009                0.0009
+     pad standardized freedman_lane phone_x_light    0.0007672     8.657       1.683   0.0001                0.0006
+     pad standardized  unrestricted            pH       0.7838      5896       1.572   0.0001                   NaN
+     pad standardized  unrestricted         phone       0.1799      8117       2.389   0.0001                   NaN
+     pad standardized  unrestricted         light     0.001184     26.71       1.957   0.0001                   NaN
+      bg          raw    restricted            pH      0.01574      7.07       6.551   0.0205                 0.041
+      bg          raw    restricted         phone       0.8237      2220       269.3   0.0001                0.0006
+      bg          raw    restricted         light      0.09663     130.2       2.132   0.0001                0.0006
+      bg          raw freedman_lane    pH_x_phone      0.01576      3.54       1.416   0.0001                0.0006
+      bg          raw freedman_lane    pH_x_light      0.01029     1.156       1.335   0.2094                0.2094
+      bg          raw freedman_lane phone_x_light      0.02009     13.54       1.689   0.0001                0.0006
+      bg          raw  unrestricted            pH      0.01574      7.07       1.702   0.0001                   NaN
+      bg          raw  unrestricted         phone       0.8237      2220       2.811   0.0001                   NaN
+      bg          raw  unrestricted         light      0.09663     130.2       2.236   0.0001                   NaN
+      bg standardized    restricted            pH      0.01025     3.291       4.713   0.5676                     1
+      bg standardized    restricted         phone       0.6091      1173       112.4   0.0001                0.0006
+      bg standardized    restricted         light       0.2809     270.6        2.33   0.0001                0.0006
+      bg standardized freedman_lane    pH_x_phone      0.02167     3.478       1.356   0.0001                0.0006
+      bg standardized freedman_lane    pH_x_light      0.01209    0.9704       1.278    0.578                     1
+      bg standardized freedman_lane phone_x_light      0.04101     19.75       1.735   0.0001                0.0006
+      bg standardized  unrestricted            pH      0.01025     3.291        1.56   0.0001                   NaN
+      bg standardized  unrestricted         phone       0.6091      1173       2.382   0.0001                   NaN
+      bg standardized  unrestricted         light       0.2809     270.6       1.929   0.0001                   NaN
+contrast          raw    restricted            pH       0.9026      9562        3770   0.0001                0.0006
+contrast          raw    restricted         phone      0.05862      3726       631.2   0.0001                0.0006
+contrast          raw    restricted         light     0.001089      34.6        2.03   0.0001                0.0006
+contrast          raw freedman_lane    pH_x_phone      0.03554     188.3       1.397   0.0001                0.0006
+contrast          raw freedman_lane    pH_x_light    0.0007113     1.884        1.29   0.0001                0.0006
+contrast          raw freedman_lane phone_x_light    0.0007151     11.36       1.716   0.0001                0.0006
+contrast          raw  unrestricted            pH       0.9026      9562       1.596   0.0001                   NaN
+contrast          raw  unrestricted         phone      0.05862      3726       2.441   0.0001                   NaN
+contrast          raw  unrestricted         light     0.001089      34.6       2.012   0.0001                   NaN
+contrast standardized    restricted            pH       0.8669      8468        3239   0.0001                0.0006
+contrast standardized    restricted         phone      0.09084      5324       924.9   0.0001                0.0006
+contrast standardized    restricted         light    0.0009868     28.92       1.933   0.0001                0.0006
+contrast standardized freedman_lane    pH_x_phone      0.03893     190.1       1.391   0.0001                0.0006
+contrast standardized freedman_lane    pH_x_light    0.0008785     2.145       1.305   0.0001                0.0006
+contrast standardized freedman_lane phone_x_light    0.0006373     9.337       1.624   0.0001                0.0006
+contrast standardized  unrestricted            pH       0.8669      8468       1.611   0.0001                   NaN
+contrast standardized  unrestricted         phone      0.09084      5324       2.479   0.0001                   NaN
+contrast standardized  unrestricted         light    0.0009868     28.92        2.02   0.0001                   NaN
+
+PC1 loading bootstrap
+  region      scaling       term channel  loading  ci_lower_95  ci_upper_95
+     pad          raw         pH       L   0.3844       0.3804       0.3886
+     pad          raw         pH       a   0.5035       0.4959       0.5113
+     pad          raw         pH       b   0.7738       0.7699       0.7776
+     pad          raw pH_x_phone       L   0.2643       0.2353       0.2928
+     pad          raw pH_x_phone       a  -0.5651      -0.5875      -0.5396
+     pad          raw pH_x_phone       b   0.7815       0.7583       0.8042
+     pad standardized         pH       L   0.5115       0.5068       0.5159
+     pad standardized         pH       a   0.4483       0.4406       0.4562
+     pad standardized         pH       b   0.7331       0.7299       0.7363
+     pad standardized pH_x_phone       L   0.5178       0.4776       0.5563
+     pad standardized pH_x_phone       a  -0.5934      -0.6119      -0.5706
+     pad standardized pH_x_phone       b   0.6162       0.5788       0.6534
+      bg          raw         pH       L  -0.9966      -0.9997      -0.9877
+      bg          raw         pH       a -0.05553      -0.1203      0.01771
+      bg          raw         pH       b  0.06028     -0.02059       0.1332
+      bg          raw pH_x_phone       L    0.988       0.9527       0.9996
+      bg          raw pH_x_phone       a   0.1518     -0.04003       0.2942
+      bg          raw pH_x_phone       b -0.02982      -0.1341      0.09147
+      bg standardized         pH       L  -0.9385      -0.9943      -0.7382
+      bg standardized         pH       a  -0.2921      -0.6252       0.1093
+      bg standardized         pH       b   0.1841     -0.04731       0.4013
+      bg standardized pH_x_phone       L    0.113     -0.03507       0.2408
+      bg standardized pH_x_phone       a   0.9582       0.8945       0.9902
+      bg standardized pH_x_phone       b  -0.2627        -0.43     -0.09238
+contrast          raw         pH       L   0.4044       0.4012       0.4075
+contrast          raw         pH       a   0.4947        0.488       0.5012
+contrast          raw         pH       b   0.7692        0.766       0.7727
+contrast          raw pH_x_phone       L   0.2722       0.2437        0.302
+contrast          raw pH_x_phone       a  -0.5787      -0.6007      -0.5559
+contrast          raw pH_x_phone       b   0.7688       0.7443       0.7914
+contrast standardized         pH       L   0.6065       0.6032       0.6098
+contrast standardized         pH       a   0.3751        0.369       0.3813
+contrast standardized         pH       b   0.7011       0.6986       0.7034
+contrast standardized pH_x_phone       L   0.8004        0.775       0.8258
+contrast standardized pH_x_phone       a  -0.4958      -0.5145      -0.4748
+contrast standardized pH_x_phone       b   0.3369       0.2928       0.3792
+
+pH vs pH_x_phone PC1 angle
+  region      scaling               comparison  angle_degrees  boot_median  ci_lower_95  ci_upper_95  n_bootstrap
+     pad          raw pH PC1 vs pH_x_phone PC1          65.06        64.96        63.35        66.65         2000
+     pad standardized pH PC1 vs pH_x_phone PC1          63.22        63.11        61.47        64.73         2000
+      bg          raw pH PC1 vs pH_x_phone PC1          5.811        6.717        1.361        15.96         2000
+      bg standardized pH PC1 vs pH_x_phone PC1          64.26        64.51        42.34         86.8         2000
+contrast          raw pH PC1 vs pH_x_phone PC1          65.47        65.44           64        66.95         2000
+contrast standardized pH PC1 vs pH_x_phone PC1          57.61        57.61        56.27        59.03         2000
+
+Limitations
+- One strip per phone x pH cell: pH x phone is tested against within-strip residual variation, not against strip-to-strip variation.
+- The residual combines the three-way interaction with measurement error.
+- Bootstrap intervals ignore strip sampling variability.
