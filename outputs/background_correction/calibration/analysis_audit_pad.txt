@@ -1,0 +1,41 @@
+New-phone offset calibration (script 35)
+================================================================================
+region: pad | base model: M1 structure, tp k = 10, REML
+combinations evaluated: 2274
+elapsed: 0.1 min
+
+pH 2-12 mean |pH error| and exact accuracy over target phones and reference sets
+(mean, 10th and 90th percentile across reference sets):
+   light_mode  k mean_abs_error_interior.mean mean_abs_error_interior.q10
+1       known  0                        0.854                       0.687
+2     unknown  0                        0.854                       0.689
+3       known  1                        0.571                       0.398
+4     unknown  1                        0.571                       0.392
+5       known  2                        0.494                       0.344
+6     unknown  2                        0.494                       0.337
+7       known  3                        0.463                       0.319
+8     unknown  3                        0.463                       0.314
+9       known 12                        0.420                       0.335
+10    unknown 12                        0.415                       0.327
+   mean_abs_error_interior.q90 exact_accuracy_interior.mean
+1                        1.033                        0.321
+2                        1.030                        0.321
+3                        0.762                        0.565
+4                        0.765                        0.563
+5                        0.646                        0.639
+6                        0.645                        0.640
+7                        0.622                        0.670
+8                        0.624                        0.672
+9                        0.508                        0.715
+10                       0.502                        0.739
+   exact_accuracy_interior.q10 exact_accuracy_interior.q90
+1                        0.193                       0.455
+2                        0.178                       0.469
+3                        0.416                       0.730
+4                        0.380                       0.741
+5                        0.489                       0.800
+6                        0.503                       0.800
+7                        0.525                       0.825
+8                        0.525                       0.825
+9                        0.629                       0.789
+10                       0.673                       0.804

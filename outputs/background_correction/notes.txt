@@ -1,0 +1,12 @@
+Background-based corrections (script 37)
+================================================================================
+images: 195 | pad channels below 1 (possible clipping): 48
+max |subtract_L - table contrast_L| (mean-RGB vs saved Lab): 0.00
+
+Standardized variance shares of each corrected feature
+ correction  share_ph  share_phone  share_light  share_ph_x_phone  share_ph_x_light  share_phone_x_light  share_residual
+        pad     0.784        0.180        0.001             0.032             0.001                0.001           0.001
+   subtract     0.867        0.091        0.001             0.039             0.001                0.001           0.001
+  wb_linear     0.843        0.115        0.000             0.040             0.001                0.001           0.001
+   bradford     0.841        0.119        0.000             0.038             0.001                0.001           0.001
+ratio_gamma     0.840        0.117        0.000             0.040             0.001                0.001           0.001

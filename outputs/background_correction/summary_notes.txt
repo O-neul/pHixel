@@ -1,0 +1,17 @@
+Background-based corrections: summary (script 38)
+================================================================================
+ correction  phone_variance_share  error_no_reference  error_1_reference  error_2_reference  error_3_reference  error_all_reference  exact_no_reference  exact_3_reference
+        pad                 0.180               0.854              0.571              0.494              0.463                0.415               0.321              0.672
+   subtract                 0.091               0.730              0.557              0.484              0.454                0.409               0.430              0.686
+  wb_linear                 0.115               0.708              0.574              0.499              0.471                0.412               0.455              0.654
+   bradford                 0.119               0.712              0.558              0.488              0.459                0.405               0.485              0.670
+ratio_gamma                 0.117               0.716              0.578              0.502              0.474                0.415               0.455              0.651
+
+Mean pH bias on an uncalibrated new phone
+phone        galaxy_s24plus  iphone13pro  iphone16pro
+correction                                           
+pad                  -0.789        0.632        0.118
+subtract             -0.573        0.645       -0.123
+wb_linear            -0.527        0.645       -0.205
+bradford             -0.547        0.647       -0.180
+ratio_gamma          -0.531        0.643       -0.226
