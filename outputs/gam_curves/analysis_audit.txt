@@ -1,0 +1,176 @@
+GAM phone-specific pH curves (script 26)
+================================================================================
+input: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv
+output: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/gam_curves
+R: R version 4.5.2 (2025-10-31) | mgcv: 1.9.3
+seed: 20261009 | posterior draws: 10000
+phones (reference first): galaxy_s24plus, iphone13pro, iphone16pro
+
+Pre-specified models (method = REML; AIC from ML refits):
+  M0: light + phone:light + s(ph) + s(strip_id, re)
+  M1: M0 + phone
+  M2: M1 + s(ph, by = ordered phone)
+Primary spec: basis tp, k = 10, region contrast.
+Sensitivity: tp k = 6, 8, 12; cr k = 10; regions pad, bg.
+
+Primary-spec model comparison:
+   region channel model aic_ml delta_aic_vs_M1 deviance_explained  strip_sd
+ contrast       L    M0  434.1        0.082362             0.9973 6.2427055
+ contrast       L    M1  434.0        0.000000             0.9973 2.9430634
+ contrast       L    M2  434.7        0.633245             0.9973 2.2970646
+ contrast       a    M0  354.4       -0.021457             0.9992 3.3069940
+ contrast       a    M1  354.4        0.000000             0.9992 3.3597920
+ contrast       a    M2  354.4       -0.008112             0.9992 1.9670570
+ contrast       b    M0  519.3        0.044385             0.9984 5.8584204
+ contrast       b    M1  519.2        0.000000             0.9984 4.3163493
+ contrast       b    M2  519.7        0.457984             0.9984 3.3748547
+      pad       L    M0  547.9        0.170969             0.9964 9.7006148
+      pad       L    M1  547.7        0.000000             0.9964 2.6612207
+      pad       L    M2  547.8        0.053682             0.9964 2.1986917
+      pad       a    M0  310.9        0.028255             0.9994 3.9292951
+      pad       a    M1  310.9        0.000000             0.9994 3.3787257
+      pad       a    M2  310.9        0.024733             0.9994 2.0774789
+      pad       b    M0  537.3        0.042590             0.9982 5.8525479
+      pad       b    M1  537.2        0.000000             0.9982 4.3938879
+      pad       b    M2  537.7        0.489789             0.9982 3.4207498
+       bg       L    M0  513.1        2.751789             0.9762 4.4960893
+       bg       L    M1  510.3        0.000000             0.9748 0.6010521
+       bg       L    M2  510.6        0.304954             0.9748 0.5591638
+       bg       a    M0  182.3       -0.050320             0.9648 1.5404229
+       bg       a    M1  182.4        0.000000             0.9634 0.3276575
+       bg       a    M2  176.6       -5.745305             0.9614 0.1637158
+       bg       b    M0  281.9       24.714369             0.9440 0.3196898
+       bg       b    M1  257.2        0.000000             0.9362 0.0008409
+       bg       b    M2  249.5       -7.692550             0.9402 0.0006197
+ residual_sd
+      0.6563
+      0.6563
+      0.6563
+      0.5350
+      0.5350
+      0.5350
+      0.8165
+      0.8165
+      0.8165
+      0.8787
+      0.8787
+      0.8787
+      0.4785
+      0.4785
+      0.4785
+      0.8551
+      0.8551
+      0.8551
+      0.8037
+      0.8037
+      0.8037
+      0.3443
+      0.3443
+      0.3443
+      0.4512
+      0.4476
+      0.4361
+
+Strip random-effect variance reduction M1 -> M2:
+   region channel basis  k strip_var_M1 strip_var_M2
+ contrast       L    tp 10    8.662e+00    5.277e+00
+ contrast       a    tp 10    1.129e+01    3.869e+00
+ contrast       b    tp 10    1.863e+01    1.139e+01
+      pad       L    tp 10    7.082e+00    4.834e+00
+      pad       a    tp 10    1.142e+01    4.316e+00
+      pad       b    tp 10    1.931e+01    1.170e+01
+       bg       L    tp 10    3.613e-01    3.127e-01
+       bg       a    tp 10    1.074e-01    2.680e-02
+       bg       b    tp 10    7.071e-07    3.841e-07
+ contrast       L    tp  6    8.633e+00    5.497e+00
+ contrast       a    tp  6    1.164e+01    4.934e+00
+ contrast       b    tp  6    1.883e+01    1.244e+01
+      pad       L    tp  6    6.983e+00    4.885e+00
+      pad       a    tp  6    1.175e+01    5.259e+00
+      pad       b    tp  6    1.951e+01    1.278e+01
+       bg       L    tp  6    3.717e-01    3.178e-01
+       bg       a    tp  6    1.073e-01    2.688e-02
+       bg       b    tp  6    7.548e-07    4.458e-07
+ contrast       L    tp  8    8.652e+00    5.372e+00
+ contrast       a    tp  8    1.132e+01    4.224e+00
+ contrast       b    tp  8    1.907e+01    1.255e+01
+      pad       L    tp  8    7.060e+00    4.878e+00
+      pad       a    tp  8    1.146e+01    4.643e+00
+      pad       b    tp  8    1.974e+01    1.290e+01
+       bg       L    tp  8    3.692e-01    3.131e-01
+       bg       a    tp  8    1.073e-01    2.686e-02
+       bg       b    tp  8    7.316e-07    4.155e-07
+ contrast       L    tp 12    8.708e+00    5.439e+00
+ contrast       a    tp 12    1.125e+01    3.529e+00
+ contrast       b    tp 12    1.851e+01    1.089e+01
+      pad       L    tp 12    7.110e+00    5.361e+00
+      pad       a    tp 12    1.136e+01    3.945e+00
+      pad       b    tp 12    1.918e+01    1.117e+01
+       bg       L    tp 12    3.619e-01    3.132e-01
+       bg       a    tp 12    1.074e-01    2.654e-02
+       bg       b    tp 12    6.684e-07    3.391e-07
+ contrast       L    cr 10    8.693e+00    5.365e+00
+ contrast       a    cr 10    1.131e+01    4.003e+00
+ contrast       b    cr 10    1.885e+01    1.194e+01
+      pad       L    cr 10    7.106e+00    4.901e+00
+      pad       a    cr 10    1.145e+01    4.461e+00
+      pad       b    cr 10    1.953e+01    1.226e+01
+       bg       L    cr 10    3.617e-01    3.138e-01
+       bg       a    cr 10    1.073e-01    2.689e-02
+       bg       b    cr 10    1.527e-06    2.019e-07
+ strip_var_reduction_M1_to_M2
+                       0.3908
+                       0.6572
+                       0.3887
+                       0.3174
+                       0.6219
+                       0.3939
+                       0.1345
+                       0.7503
+                       0.4569
+                       0.3632
+                       0.5763
+                       0.3394
+                       0.3004
+                       0.5525
+                       0.3451
+                       0.1448
+                       0.7494
+                       0.4094
+                       0.3791
+                       0.6268
+                       0.3416
+                       0.3091
+                       0.5947
+                       0.3466
+                       0.1520
+                       0.7497
+                       0.4320
+                       0.3754
+                       0.6863
+                       0.4116
+                       0.2460
+                       0.6526
+                       0.4177
+                       0.1347
+                       0.7528
+                       0.4927
+                       0.3829
+                       0.6460
+                       0.3668
+                       0.3103
+                       0.6103
+                       0.3721
+                       0.1325
+                       0.7495
+                       0.8678
+
+Limitations:
+- One strip per phone x pH: the split between smooth phone curves and strip
+  deviations relies on the smoothness assumption.
+- Curves describe observed phone-specific responses, not hardware-only effects.
+- pH 1 and 13 are boundary points of the basis; intervals widen there.
+- The strip random effect can absorb any strip mean, so AIC differences
+  between M0-M2 are small by construction. Judge phone-specific curves by
+  the by-smooth tests, strip variance reduction and strip-holdout
+  prediction (script 27).
