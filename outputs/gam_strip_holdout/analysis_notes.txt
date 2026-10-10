@@ -1,0 +1,129 @@
+GAM leave-one-strip-out summary (script 27)
+================================================================================
+bootstrap: 3000 reps, seed 42, strips resampled within phone
+RCS reference: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/boundary_stabilized_models/subset_comparisons.csv
+
+Mean image Delta E76 by model
+basis  k  primary_spec   region model  mean_deltaE76  median_deltaE76  q90_deltaE76
+   cr 10         False       bg    M0          4.481            5.082         7.133
+   cr 10         False       bg    M1           1.13            1.029         2.054
+   cr 10         False       bg    M2          1.128            1.027         1.946
+   cr 10         False contrast    M0          9.368            8.903         14.97
+   cr 10         False contrast    M1          6.522            6.258         9.321
+   cr 10         False contrast    M2          5.629            4.407         9.161
+   cr 10         False      pad    M0          12.25            13.03         17.67
+   cr 10         False      pad    M1          6.478            6.088         9.214
+   cr 10         False      pad    M2          5.719            4.357         9.244
+   tp  6         False       bg    M0          4.481            5.082         7.133
+   tp  6         False       bg    M1          1.131            1.041         2.061
+   tp  6         False       bg    M2          1.127            1.029         1.927
+   tp  6         False contrast    M0          9.287            8.928         14.98
+   tp  6         False contrast    M1          6.429            6.226          9.04
+   tp  6         False contrast    M2          5.704            4.571         9.181
+   tp  6         False      pad    M0          12.16             13.1         17.24
+   tp  6         False      pad    M1          6.385            6.023         8.988
+   tp  6         False      pad    M2          5.692            4.504         8.567
+   tp  8         False       bg    M0          4.481            5.082         7.133
+   tp  8         False       bg    M1          1.131            1.034          2.06
+   tp  8         False       bg    M2          1.122            1.028         1.922
+   tp  8         False contrast    M0           9.35             8.98         15.02
+   tp  8         False contrast    M1          6.513            6.318         9.139
+   tp  8         False contrast    M2          5.754            4.388         9.225
+   tp  8         False      pad    M0          12.24             13.1          17.6
+   tp  8         False      pad    M1          6.468            5.975          9.24
+   tp  8         False      pad    M2          5.759            4.407         9.017
+   tp 10          True       bg    M0          4.481            5.082         7.133
+   tp 10          True       bg    M1           1.13             1.03         2.052
+   tp 10          True       bg    M2          1.128            1.032         1.941
+   tp 10          True contrast    M0          9.379            8.864         14.96
+   tp 10          True contrast    M1          6.512            6.172          9.35
+   tp 10          True contrast    M2          5.626            4.305         9.755
+   tp 10          True      pad    M0          12.26            12.98         17.67
+   tp 10          True      pad    M1          6.467            6.052         9.239
+   tp 10          True      pad    M2          5.669            4.316         9.632
+   tp 12         False       bg    M0          4.481            5.082         7.133
+   tp 12         False       bg    M1           1.13            1.029         2.054
+   tp 12         False       bg    M2          1.127            1.027         1.938
+   tp 12         False contrast    M0          9.388            8.897         14.97
+   tp 12         False contrast    M1          6.521            6.155          9.42
+   tp 12         False contrast    M2          5.696            4.331         10.41
+   tp 12         False      pad    M0          12.27            13.05         17.66
+   tp 12         False      pad    M1          6.474            5.994         9.168
+   tp 12         False      pad    M2          5.648            4.313         10.45
+
+Primary spec (tp k=10) paired comparisons
+  region basis  k                  subset  comparison  mean_difference  bootstrap_ci_lower  bootstrap_ci_upper  proportion_numerator_better
+      bg    tp 10                  all_ph M2 minus M1        -0.001469            -0.07237             0.06226                       0.4359
+      bg    tp 10        boundary_ph_1_13 M2 minus M1           -0.114             -0.2665             0.03843                          0.5
+      bg    tp 10        interior_ph_2_12 M2 minus M1            0.019            -0.04101             0.08327                       0.4242
+      bg    tp 10 strict_interior_ph_3_11 M2 minus M1          0.01842            -0.04801             0.08898                       0.4074
+contrast    tp 10                  all_ph M2 minus M1          -0.8855              -1.995              0.3989                       0.6667
+contrast    tp 10        boundary_ph_1_13 M2 minus M1           0.6397              -2.932               4.212                       0.6667
+contrast    tp 10        interior_ph_2_12 M2 minus M1           -1.163              -1.924              -0.332                       0.6667
+contrast    tp 10 strict_interior_ph_3_11 M2 minus M1           -1.007               -1.86            -0.08274                       0.6296
+     pad    tp 10                  all_ph M2 minus M1          -0.7983              -1.898              0.4843                       0.7179
+     pad    tp 10        boundary_ph_1_13 M2 minus M1           0.2852              -3.235               3.806                       0.6667
+     pad    tp 10        interior_ph_2_12 M2 minus M1          -0.9953              -1.735             -0.1574                       0.7273
+     pad    tp 10 strict_interior_ph_3_11 M2 minus M1          -0.7606              -1.594              0.1385                       0.6667
+      bg    tp 10                  all_ph M2 minus M0           -3.353              -3.577              -3.151                       0.9744
+      bg    tp 10        boundary_ph_1_13 M2 minus M0           -3.454               -3.62              -3.288                            1
+      bg    tp 10        interior_ph_2_12 M2 minus M0           -3.335              -3.573              -3.111                       0.9697
+      bg    tp 10 strict_interior_ph_3_11 M2 minus M0           -3.288              -3.545              -3.043                        0.963
+contrast    tp 10                  all_ph M2 minus M0           -3.753              -4.879              -2.476                       0.8205
+contrast    tp 10        boundary_ph_1_13 M2 minus M0           -3.043              -6.418              0.3319                       0.6667
+contrast    tp 10        interior_ph_2_12 M2 minus M0           -3.882               -4.87              -2.846                       0.8485
+contrast    tp 10 strict_interior_ph_3_11 M2 minus M0            -3.79              -4.871              -2.577                       0.8519
+     pad    tp 10                  all_ph M2 minus M0            -6.59              -7.715              -5.395                       0.9744
+     pad    tp 10        boundary_ph_1_13 M2 minus M0           -7.295              -11.24              -3.351                       0.8333
+     pad    tp 10        interior_ph_2_12 M2 minus M0           -6.462              -7.442              -5.493                            1
+     pad    tp 10 strict_interior_ph_3_11 M2 minus M0            -6.54              -7.556              -5.424                            1
+      bg    tp 10                  all_ph M1 minus M0           -3.351              -3.565              -3.146                       0.9744
+      bg    tp 10        boundary_ph_1_13 M1 minus M0            -3.34              -3.512              -3.168                            1
+      bg    tp 10        interior_ph_2_12 M1 minus M0           -3.354               -3.58               -3.13                       0.9697
+      bg    tp 10 strict_interior_ph_3_11 M1 minus M0           -3.306              -3.544              -3.059                        0.963
+contrast    tp 10                  all_ph M1 minus M0           -2.868              -3.683              -1.941                       0.7949
+contrast    tp 10        boundary_ph_1_13 M1 minus M0           -3.683              -5.084              -2.281                            1
+contrast    tp 10        interior_ph_2_12 M1 minus M0            -2.72              -3.657              -1.747                       0.7576
+contrast    tp 10 strict_interior_ph_3_11 M1 minus M0           -2.782              -3.862              -1.561                       0.7407
+     pad    tp 10                  all_ph M1 minus M0           -5.792              -6.765              -4.749                       0.8462
+     pad    tp 10        boundary_ph_1_13 M1 minus M0            -7.58              -9.073              -6.087                            1
+     pad    tp 10        interior_ph_2_12 M1 minus M0           -5.467              -6.492              -4.458                       0.8182
+     pad    tp 10 strict_interior_ph_3_11 M1 minus M0           -5.779              -6.931              -4.532                       0.8148
+
+M2 minus M1 across specs (interior and boundary)
+  region basis  k           subset  comparison  mean_difference  bootstrap_ci_lower  bootstrap_ci_upper  proportion_numerator_better
+      bg    cr 10 boundary_ph_1_13 M2 minus M1          -0.1135             -0.2667             0.03966                          0.5
+      bg    cr 10 interior_ph_2_12 M2 minus M1           0.0184            -0.04141             0.08235                       0.4242
+contrast    cr 10 boundary_ph_1_13 M2 minus M1           0.4412              -3.232               4.115                       0.6667
+contrast    cr 10 interior_ph_2_12 M2 minus M1           -1.135              -1.906             -0.3152                       0.6667
+     pad    cr 10 boundary_ph_1_13 M2 minus M1           0.2653              -3.173               3.703                       0.6667
+     pad    cr 10 interior_ph_2_12 M2 minus M1          -0.9446              -1.697             -0.1161                       0.7273
+      bg    tp  6 boundary_ph_1_13 M2 minus M1          -0.0993             -0.2525             0.05395                       0.6667
+      bg    tp  6 interior_ph_2_12 M2 minus M1          0.01313            -0.04787             0.07799                       0.4545
+contrast    tp  6 boundary_ph_1_13 M2 minus M1           0.9903              -2.288               4.268                       0.6667
+contrast    tp  6 interior_ph_2_12 M2 minus M1           -1.037              -1.779             -0.2623                       0.6364
+     pad    tp  6 boundary_ph_1_13 M2 minus M1           0.4613              -2.791               3.714                       0.6667
+     pad    tp  6 interior_ph_2_12 M2 minus M1          -0.9024              -1.645            -0.09962                       0.6667
+      bg    tp  8 boundary_ph_1_13 M2 minus M1           -0.123             -0.2645             0.01843                       0.6667
+      bg    tp  8 interior_ph_2_12 M2 minus M1          0.01134            -0.04951             0.07578                       0.4545
+contrast    tp  8 boundary_ph_1_13 M2 minus M1           0.8675              -2.508               4.243                       0.6667
+contrast    tp  8 interior_ph_2_12 M2 minus M1           -1.055              -1.839               -0.23                        0.697
+     pad    tp  8 boundary_ph_1_13 M2 minus M1           0.3405              -2.776               3.457                       0.6667
+     pad    tp  8 interior_ph_2_12 M2 minus M1          -0.8994              -1.662            -0.07897                       0.6667
+      bg    tp 10 boundary_ph_1_13 M2 minus M1           -0.114             -0.2665             0.03843                          0.5
+      bg    tp 10 interior_ph_2_12 M2 minus M1            0.019            -0.04101             0.08327                       0.4242
+contrast    tp 10 boundary_ph_1_13 M2 minus M1           0.6397              -2.932               4.212                       0.6667
+contrast    tp 10 interior_ph_2_12 M2 minus M1           -1.163              -1.924              -0.332                       0.6667
+     pad    tp 10 boundary_ph_1_13 M2 minus M1           0.2852              -3.235               3.806                       0.6667
+     pad    tp 10 interior_ph_2_12 M2 minus M1          -0.9953              -1.735             -0.1574                       0.7273
+      bg    tp 12 boundary_ph_1_13 M2 minus M1          -0.1159             -0.2679             0.03618                          0.5
+      bg    tp 12 interior_ph_2_12 M2 minus M1          0.01803            -0.04199             0.08214                       0.4242
+contrast    tp 12 boundary_ph_1_13 M2 minus M1           0.5723              -3.034               4.179                       0.6667
+contrast    tp 12 interior_ph_2_12 M2 minus M1           -1.079              -1.796             -0.2986                       0.6667
+     pad    tp 12 boundary_ph_1_13 M2 minus M1           0.1726              -3.307               3.652                       0.6667
+     pad    tp 12 interior_ph_2_12 M2 minus M1           -1.008               -1.72             -0.2153                        0.697
+
+Notes
+- Negative differences favour the numerator model.
+- pH 1 and 13 strips are extrapolations for the held-out phone curve.
+- Predictions exclude the strip random effect (new strip).
