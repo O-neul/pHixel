@@ -44,6 +44,25 @@ Mean |pH shift| over pH 2-12 (Contrast; posterior median):
 - Background subtraction reduces the offset effect (Pad offset: 0.84 / 0.45 /
   0.39 vs Contrast 0.63 / 0.52 / 0.12).
 
+Angle between each phone component and the pH direction, pH 2-12
+(`component_angle.csv`; 0 = aligned, 90 = orthogonal; median over pH, posterior
+median [95%]):
+
+| Contrast | Galaxy S24+ | iPhone 13 Pro | iPhone 16 Pro |
+|---|---|---|---|
+| phone offset | 41 [34, 50] | 32 [25, 39] | 72 [48, 85] |
+| phone curve shape | 65 [44, 79] | 51 [37, 68] | 62 [45, 77] |
+
+- The two large offsets (Galaxy S24+, iPhone 13 Pro) lie 32-41 degrees from
+  the pH direction, so most of their size moves the reading. The iPhone 16 Pro
+  offset is nearly orthogonal (72 degrees), which is why its pH effect is small.
+- Curve-shape differences are oblique (51-65 degrees) as well as small.
+- `component_angle.csv` was produced with R 4.5.0 / mgcv 1.9.1 (Windows); the
+  other files in this folder come from R 4.5.2 / mgcv 1.9.3 (Mac). Rerunning
+  script 34 on Windows changes the shift summaries by at most 0.01 pH in the
+  table above (e.g. iPhone 13 Pro offset 0.52 -> 0.53). Regenerate all outputs
+  together in one environment before submission.
+
 ## 3. New-phone offset calibration (script 35)
 
 Leave-one-phone-out: a GAM fitted on two phones gives the base curve; the

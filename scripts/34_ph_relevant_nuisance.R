@@ -26,6 +26,11 @@
 # For vector components the signed pH shift is reported; for the noise terms
 # the SD of the pH shift, sqrt(sum_j (t_hat_j sigma_j)^2) / s.
 #
+# Alignment: for the phone offset and shape, the angle between the colour shift
+# and the pH direction, acos(|v . t_hat| / |v|), in 0-90 degrees (0 = along the
+# pH direction, 90 = orthogonal). Summarised per draw as the median and mean
+# over pH 2-12.
+#
 # Uncertainty: 1000 draws from the posterior of the M2 coefficients
 # (Vp, unconditional), applied to every derived quantity.
 #
@@ -35,6 +40,7 @@
 #   component_shift_by_ph.csv   region x phone x component x light x pH (median, 95% interval)
 #   component_summary.csv       mean |pH shift| over pH 2-12 and pH 1/13 (with intervals)
 #   trajectory.csv              T(x), colour speed s(x)
+#   component_angle.csv         offset/shape angle to the pH direction over pH 2-12
 #   analysis_audit.txt
 #
 
@@ -161,6 +167,7 @@ quantiles <- function(matrix_by_draw) {
 shift_rows <- list()
 summary_rows <- list()
 trajectory_rows <- list()
+angle_rows <- list()
 audit_rows <- list()
 
 for (region in REGIONS) {
@@ -214,6 +221,23 @@ for (region in REGIONS) {
     apply(vector_field * unit, c(1, 2), sum) / speed
   }
 
+  add_angle <- function(phone_value, component, vector_field) {
+    # acute angle (degrees) between the shift and the pH direction, [grid, draw]
+    along <- abs(apply(vector_field * unit, c(1, 2), sum))
+    size <- sqrt(apply(vector_field^2, c(1, 2), sum))
+    angle <- acos(pmin(along / size, 1)) * 180 / pi
+    for (statistic in c("median", "mean")) {
+      per_draw <- apply(angle[INTERIOR, , drop = FALSE], 2, statistic)
+      angle_rows[[length(angle_rows) + 1]] <<- data.frame(
+        region = region, phone = phone_value, component = component,
+        statistic = paste0(statistic, "_over_ph_2_12"),
+        angle_median = median(per_draw),
+        angle_lower = unname(quantile(per_draw, 0.025)),
+        angle_upper = unname(quantile(per_draw, 0.975))
+      )
+    }
+  }
+
   speed_q <- quantiles(speed)
   trajectory_rows[[region]] <- data.frame(
     region = region, ph = PH_GRID,
@@ -251,6 +275,8 @@ for (region in REGIONS) {
     add_component(phone_value, "phone_offset", "all", ph_shift(offset_field))
     add_component(phone_value, "phone_shape", "all", ph_shift(shape_field))
     add_component(phone_value, "phone_total", "all", ph_shift(deviation))
+    add_angle(phone_value, "phone_offset", offset_field)
+    add_angle(phone_value, "phone_shape", shape_field)
 
     for (light_value in LIGHTS) {
       light_field <- curves[[paste(phone_value, light_value)]] - phone_curve[[phone_value]]
@@ -281,6 +307,9 @@ write.csv(summary, file.path(output_dir, "component_summary.csv"),
           row.names = FALSE, fileEncoding = "UTF-8")
 write.csv(do.call(rbind, trajectory_rows), file.path(output_dir, "trajectory.csv"),
           row.names = FALSE, fileEncoding = "UTF-8")
+angles <- do.call(rbind, angle_rows)
+write.csv(angles, file.path(output_dir, "component_angle.csv"),
+          row.names = FALSE, fileEncoding = "UTF-8")
 
 view <- summary[summary$light %in% c("all") | summary$component == "light", ]
 light_max <- aggregate(mean_abs_shift_median ~ region + phone + subset,
@@ -303,6 +332,9 @@ notes <- c(
   "",
   "Largest light component per phone (mean |pH shift|, median over draws):",
   capture.output(print(light_max, row.names = FALSE, digits = 3)),
+  "",
+  "Angle to the pH direction, pH 2-12 (0 = aligned, 90 = orthogonal; median and 95% interval over draws):",
+  capture.output(print(angles, row.names = FALSE, digits = 3)),
   "",
   "Noise SDs used:",
   capture.output(print(do.call(rbind, audit_rows), row.names = FALSE, digits = 3))
