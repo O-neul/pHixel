@@ -16,21 +16,21 @@ contrast                12                 3              0.409 0.331 0.480     
 
 Phone offset: predicted pH shift (script 34) vs observed bias without calibration (script 35)
   region          phone  predicted_mean_abs_shift  predicted_lower  predicted_upper  observed_mean_bias_new_phone  observed_mean_abs_error_new_phone
-contrast galaxy_s24plus                     0.631            0.496            0.772                        -0.573                              0.816
-contrast    iphone13pro                     0.520            0.394            0.661                         0.645                              0.890
-contrast    iphone16pro                     0.119            0.037            0.237                        -0.123                              0.485
-     pad galaxy_s24plus                     0.838            0.695            1.026                        -0.789                              1.082
-     pad    iphone13pro                     0.453            0.337            0.584                         0.632                              0.825
-     pad    iphone16pro                     0.390            0.250            0.544                         0.118                              0.655
+contrast galaxy_s24plus                     0.631            0.495            0.774                        -0.573                              0.816
+contrast    iphone13pro                     0.529            0.399            0.662                         0.645                              0.890
+contrast    iphone16pro                     0.109            0.040            0.230                        -0.123                              0.485
+     pad galaxy_s24plus                     0.842            0.686            1.017                        -0.789                              1.082
+     pad    iphone13pro                     0.456            0.333            0.593                         0.632                              0.825
+     pad    iphone16pro                     0.390            0.254            0.550                         0.118                              0.655
 
 Mean |pH shift| by nuisance component, pH 2-12 (script 34; noise rows = SD)
                          image_noise  phone_offset  phone_shape  phone_total  strip_noise  light_max
 region   phone                                                                                      
-contrast all                   0.075           NaN          NaN          NaN        0.296        NaN
-         galaxy_s24plus          NaN         0.631        0.129        0.659          NaN      0.159
-         iphone13pro             NaN         0.520        0.219        0.566          NaN      0.033
-         iphone16pro             NaN         0.119        0.176        0.206          NaN      0.069
-pad      all                   0.080           NaN          NaN          NaN        0.301        NaN
-         galaxy_s24plus          NaN         0.838        0.138        0.875          NaN      0.085
-         iphone13pro             NaN         0.453        0.224        0.514          NaN      0.181
-         iphone16pro             NaN         0.390        0.184        0.404          NaN      0.149
+contrast all                   0.075           NaN          NaN          NaN        0.295        NaN
+         galaxy_s24plus          NaN         0.631        0.128        0.659          NaN      0.159
+         iphone13pro             NaN         0.529        0.219        0.572          NaN      0.033
+         iphone16pro             NaN         0.109        0.178        0.206          NaN      0.069
+pad      all                   0.081           NaN          NaN          NaN        0.301        NaN
+         galaxy_s24plus          NaN         0.842        0.139        0.876          NaN      0.084
+         iphone13pro             NaN         0.456        0.225        0.516          NaN      0.179
+         iphone16pro             NaN         0.390        0.184        0.404          NaN      0.150

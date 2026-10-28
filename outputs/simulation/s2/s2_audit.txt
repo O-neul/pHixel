@@ -1,8 +1,8 @@
 Simulation S2: GAM identification of phone-specific curves (script 30)
 ================================================================================
-R: R version 4.5.2 (2025-10-31) | mgcv: 1.9.3
-replicates per cell: 500 | posterior draws: 1000 | cores: 6
+R: R version 4.5.0 (2025-04-11 ucrt) | mgcv: 1.9.1
+replicates per cell: 500 | posterior draws: 1000 | cores: 12
 rows written: 8000 | non-converged: 0
 LOSO data sets: 400 (A = 0 and A = 1, m = 1)
-elapsed: 8.8 min
+elapsed: 7.8 min
 Summaries: 32_summarize_simulation.py

@@ -2,7 +2,7 @@ New-phone offset calibration (script 35)
 ================================================================================
 region: wb_linear | base model: M1 structure, tp k = 10, REML
 combinations evaluated: 2274
-elapsed: 0.1 min
+elapsed: 0.2 min
 
 pH 2-12 mean |pH error| and exact accuracy over target phones and reference sets
 (mean, 10th and 90th percentile across reference sets):

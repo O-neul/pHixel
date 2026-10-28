@@ -1,8 +1,8 @@
 GAM phone-specific pH curves (script 26)
 ================================================================================
-input: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv
-output: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/gam_curves
-R: R version 4.5.2 (2025-10-31) | mgcv: 1.9.3
+input: C:\.Soyeon\DS\학부연구생\DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv
+output: C:\.Soyeon\DS\학부연구생\DIC_NuisanceDG/outputs/gam_curves
+R: R version 4.5.0 (2025-04-11 ucrt) | mgcv: 1.9.1
 seed: 20261009 | posterior draws: 10000
 phones (reference first): galaxy_s24plus, iphone13pro, iphone16pro
 

@@ -1,6 +1,6 @@
 {
-  "input": "/Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv",
-  "output": "/Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/asca_permutation",
+  "input": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\factorial_analysis\\analysis_factorial_table.csv",
+  "output": "C:\\.Soyeon\\DS\\학부연구생\\DIC_NuisanceDG\\outputs\\asca_permutation",
   "rows": 195,
   "scalings": [
     "raw",

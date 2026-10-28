@@ -44,7 +44,7 @@ A = phone-specific curve size (1 = real); m = strip SD multiplier.
 |---|---|---|---|---|---|
 | 0 | 0.5 / 1 / 2 | 0.10 / 0.11 / 0.11 | 0.98-1.00 | 6-8% | 0.97 / 0.97-0.98 |
 | 0.25 | 1 | 0.35 | 1.00 | 17% | 0.97 / 0.36 |
-| 0.5 | 1 | 0.85 | 1.00 | 36% | 0.96 / 0.34 |
+| 0.5 | 1 | 0.85 | 1.00 | 36% | 0.96 / 0.35 |
 | 1 | 1 | 1.00 | 1.00 | 68% | 0.97 / 0.41 |
 
 L* and b* (A = 0 / 1, m = 1): Holm rejection 0.08 / 0.97 and 0.10 / 0.75.
@@ -60,7 +60,7 @@ Findings:
    (39-66%) are far above this null level and close to the A = 1 value (68%).
 4. Simultaneous bands cover the truth (about 0.97) when the true curve is zero
    or simple (iPhone 13 Pro a*, nearly linear). For a small, wiggly true curve
-   (iPhone 16 Pro a*, range 2 Lab units) coverage drops to 0.34-0.61 because
+   (iPhone 16 Pro a*, range 2 Lab units) coverage drops to 0.35-0.61 because
    penalization shrinks the curve (smoothing bias). Pointwise coverage
    0.82-0.96. "pH intervals where the band excludes zero" should be described
    as indicative for wiggly, small differences.
@@ -74,7 +74,7 @@ pH 2-12:
 
 | model | A = 0 | A = 1 | real data |
 |---|---|---|---|
-| GAM M2 - M1 | +0.19 (-0.08, +0.40); CI < 0 in 0% | -1.03 (-1.73, -0.43); CI < 0 in 81% | -1.16 |
+| GAM M2 - M1 | +0.18 (-0.08, +0.40); CI < 0 in 0% | -1.03 (-1.73, -0.43); CI < 0 in 80.5% | -1.16 |
 | RCS knots 3 / 4 / 5 | +0.55 / +0.41 / +0.62 | -0.23 / -0.72 / -0.56 | -0.18 / -1.13 / -0.85 |
 | RCS ridge knots 3 / 4 / 5 | +0.02 / +0.04 / +0.03 | -0.26 / -0.69 / -0.68 | -0.13 / -0.79 / -0.35 |
 

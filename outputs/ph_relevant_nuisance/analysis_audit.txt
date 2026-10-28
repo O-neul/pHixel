@@ -1,71 +1,123 @@
 pH-relevant nuisance decomposition (script 34)
 ================================================================================
-R: R version 4.5.2 (2025-10-31) | mgcv: 1.9.3
+R: R version 4.5.0 (2025-04-11 ucrt) | mgcv: 1.9.1
 model: M2, tp k = 10; posterior draws: 1000 | seed: 20261009
 pH shift = (colour shift . unit tangent) / colour speed; noise terms give SD
 
 Mean |pH shift| over pH 2-12 (median and 95% interval over draws):
    region          phone    component mean_abs_shift_median
- contrast galaxy_s24plus phone_offset                0.6314
- contrast galaxy_s24plus  phone_shape                0.1292
- contrast galaxy_s24plus  phone_total                0.6595
- contrast    iphone13pro phone_offset                0.5196
- contrast    iphone13pro  phone_shape                0.2188
- contrast    iphone13pro  phone_total                0.5664
- contrast    iphone16pro phone_offset                0.1190
- contrast    iphone16pro  phone_shape                0.1758
- contrast    iphone16pro  phone_total                0.2058
- contrast            all  strip_noise                0.2959
- contrast            all  image_noise                0.0751
-      pad galaxy_s24plus phone_offset                0.8382
-      pad galaxy_s24plus  phone_shape                0.1380
+ contrast galaxy_s24plus phone_offset                0.6308
+ contrast galaxy_s24plus  phone_shape                0.1284
+ contrast galaxy_s24plus  phone_total                0.6591
+ contrast    iphone13pro phone_offset                0.5287
+ contrast    iphone13pro  phone_shape                0.2189
+ contrast    iphone13pro  phone_total                0.5718
+ contrast    iphone16pro phone_offset                0.1090
+ contrast    iphone16pro  phone_shape                0.1776
+ contrast    iphone16pro  phone_total                0.2061
+ contrast            all  strip_noise                0.2951
+ contrast            all  image_noise                0.0750
+      pad galaxy_s24plus phone_offset                0.8415
+      pad galaxy_s24plus  phone_shape                0.1394
       pad galaxy_s24plus  phone_total                0.8755
-      pad    iphone13pro phone_offset                0.4533
-      pad    iphone13pro  phone_shape                0.2244
-      pad    iphone13pro  phone_total                0.5139
-      pad    iphone16pro phone_offset                0.3903
-      pad    iphone16pro  phone_shape                0.1837
-      pad    iphone16pro  phone_total                0.4042
-      pad            all  strip_noise                0.3006
-      pad            all  image_noise                0.0805
+      pad    iphone13pro phone_offset                0.4561
+      pad    iphone13pro  phone_shape                0.2248
+      pad    iphone13pro  phone_total                0.5164
+      pad    iphone16pro phone_offset                0.3898
+      pad    iphone16pro  phone_shape                0.1838
+      pad    iphone16pro  phone_total                0.4038
+      pad            all  strip_noise                0.3007
+      pad            all  image_noise                0.0806
  mean_abs_shift_lower mean_abs_shift_upper
-               0.4959               0.7718
-               0.0626               0.2282
-               0.5098               0.8345
-               0.3944               0.6606
-               0.1367               0.3284
-               0.4229               0.7386
-               0.0374               0.2374
-               0.0873               0.3087
-               0.1117               0.3255
-               0.2738               0.3291
-               0.0697               0.0840
-               0.6954               1.0260
-               0.0719               0.2212
-               0.7229               1.0798
-               0.3368               0.5836
-               0.1320               0.3306
-               0.3869               0.6614
-               0.2501               0.5438
-               0.0848               0.3275
-               0.2812               0.5604
-               0.2812               0.3306
-               0.0747               0.0905
+               0.4948               0.7737
+               0.0667               0.2314
+               0.4985               0.8290
+               0.3994               0.6624
+               0.1344               0.3341
+               0.4278               0.7375
+               0.0399               0.2300
+               0.0800               0.3096
+               0.1166               0.3190
+               0.2751               0.3289
+               0.0699               0.0837
+               0.6856               1.0170
+               0.0730               0.2151
+               0.7121               1.0721
+               0.3335               0.5935
+               0.1273               0.3360
+               0.3839               0.6582
+               0.2537               0.5498
+               0.0864               0.3190
+               0.2739               0.5667
+               0.2818               0.3312
+               0.0751               0.0900
 
 Largest light component per phone (mean |pH shift|, median over draws):
    region          phone           subset mean_abs_shift_median
- contrast galaxy_s24plus boundary_ph_1_13                0.1515
-      pad galaxy_s24plus boundary_ph_1_13                0.0827
- contrast    iphone13pro boundary_ph_1_13                0.0293
-      pad    iphone13pro boundary_ph_1_13                0.1308
- contrast    iphone16pro boundary_ph_1_13                0.0693
-      pad    iphone16pro boundary_ph_1_13                0.1132
+ contrast galaxy_s24plus boundary_ph_1_13                0.1505
+      pad galaxy_s24plus boundary_ph_1_13                0.0821
+ contrast    iphone13pro boundary_ph_1_13                0.0297
+      pad    iphone13pro boundary_ph_1_13                0.1273
+ contrast    iphone16pro boundary_ph_1_13                0.0704
+      pad    iphone16pro boundary_ph_1_13                0.1121
  contrast galaxy_s24plus interior_ph_2_12                0.1590
-      pad galaxy_s24plus interior_ph_2_12                0.0850
+      pad galaxy_s24plus interior_ph_2_12                0.0841
  contrast    iphone13pro interior_ph_2_12                0.0331
-      pad    iphone13pro interior_ph_2_12                0.1808
- contrast    iphone16pro interior_ph_2_12                0.0692
-      pad    iphone16pro interior_ph_2_12                0.1492
+      pad    iphone13pro interior_ph_2_12                0.1791
+ contrast    iphone16pro interior_ph_2_12                0.0687
+      pad    iphone16pro interior_ph_2_12                0.1498
+
+Angle to the pH direction, pH 2-12 (0 = aligned, 90 = orthogonal; median and 95% interval over draws):
+   region          phone    component           statistic angle_median
+ contrast galaxy_s24plus phone_offset median_over_ph_2_12         40.8
+ contrast galaxy_s24plus phone_offset   mean_over_ph_2_12         43.8
+ contrast galaxy_s24plus  phone_shape median_over_ph_2_12         64.7
+ contrast galaxy_s24plus  phone_shape   mean_over_ph_2_12         62.6
+ contrast    iphone13pro phone_offset median_over_ph_2_12         31.5
+ contrast    iphone13pro phone_offset   mean_over_ph_2_12         36.0
+ contrast    iphone13pro  phone_shape median_over_ph_2_12         51.0
+ contrast    iphone13pro  phone_shape   mean_over_ph_2_12         51.5
+ contrast    iphone16pro phone_offset median_over_ph_2_12         72.0
+ contrast    iphone16pro phone_offset   mean_over_ph_2_12         71.4
+ contrast    iphone16pro  phone_shape median_over_ph_2_12         62.0
+ contrast    iphone16pro  phone_shape   mean_over_ph_2_12         60.8
+      pad galaxy_s24plus phone_offset median_over_ph_2_12         49.7
+      pad galaxy_s24plus phone_offset   mean_over_ph_2_12         52.1
+      pad galaxy_s24plus  phone_shape median_over_ph_2_12         60.1
+      pad galaxy_s24plus  phone_shape   mean_over_ph_2_12         59.3
+      pad    iphone13pro phone_offset median_over_ph_2_12         32.9
+      pad    iphone13pro phone_offset   mean_over_ph_2_12         36.4
+      pad    iphone13pro  phone_shape median_over_ph_2_12         50.5
+      pad    iphone13pro  phone_shape   mean_over_ph_2_12         50.5
+      pad    iphone16pro phone_offset median_over_ph_2_12         66.5
+      pad    iphone16pro phone_offset   mean_over_ph_2_12         66.5
+      pad    iphone16pro  phone_shape median_over_ph_2_12         56.2
+      pad    iphone16pro  phone_shape   mean_over_ph_2_12         56.2
+ angle_lower angle_upper
+        33.9        49.5
+        38.2        51.6
+        44.1        78.7
+        44.3        74.7
+        25.3        39.3
+        31.3        42.1
+        36.8        67.5
+        41.1        63.1
+        47.6        84.9
+        49.8        83.6
+        45.2        76.8
+        48.4        72.6
+        43.3        57.4
+        46.4        58.0
+        40.8        75.0
+        42.3        71.0
+        24.8        43.5
+        31.5        42.7
+        35.5        66.0
+        40.4        62.3
+        57.4        75.5
+        58.6        74.8
+        39.6        75.7
+        42.4        70.7
 
 Noise SDs used:
    region sigma_strip_L sigma_strip_a sigma_strip_b sigma_image_L sigma_image_a

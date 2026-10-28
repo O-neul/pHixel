@@ -9,7 +9,7 @@ basis  k  primary_spec   region model  interior  mean_abs_error_ph  median_abs_e
    tp 10          True       bg    M1     False              7.538                8.475                12         0.06667               0.1              0.4
    tp 10          True       bg    M1      True              4.028                    3                10         0.08485            0.2485           0.5867
    tp 10          True       bg    M2     False               4.13                 3.05             9.735             0.3               0.3           0.6667
-   tp 10          True       bg    M2      True              3.863                 2.95              8.12         0.09091            0.2485           0.5533
+   tp 10          True       bg    M2      True              3.857                 2.95              8.12         0.09091            0.2485           0.5533
    tp 10          True contrast    M0     False             0.2533                    0              1.15          0.8333            0.8333                1
    tp 10          True contrast    M0      True              0.583                 0.45              1.33          0.5212            0.8606                1
    tp 10          True contrast    M1     False             0.1017                0.025               0.3               1                 1                1
@@ -25,9 +25,9 @@ basis  k  primary_spec   region model  interior  mean_abs_error_ph  median_abs_e
 
 Primary-spec paired strip comparisons
   region           subset            metric  comparison  mean_numerator  mean_denominator  mean_difference  bootstrap_ci_lower  bootstrap_ci_upper  proportion_numerator_better  proportion_equal
-      bg           all_ph mean_abs_error_ph M2 minus M1           3.904             4.568          -0.6641              -1.702              0.2656                       0.5385                 0
+      bg           all_ph mean_abs_error_ph M2 minus M1           3.899             4.568           -0.669              -1.706              0.2564                       0.5385                 0
       bg boundary_ph_1_13 mean_abs_error_ph M2 minus M1            4.13             7.538           -3.408              -6.058             -0.7583                       0.8333                 0
-      bg interior_ph_2_12 mean_abs_error_ph M2 minus M1           3.863             4.028          -0.1652             -0.9538               0.568                       0.4848                 0
+      bg interior_ph_2_12 mean_abs_error_ph M2 minus M1           3.857             4.028          -0.1709             -0.9591              0.5622                       0.4848                 0
 contrast           all_ph mean_abs_error_ph M2 minus M1          0.3526            0.3441         0.008462             -0.0777              0.1067                       0.5128           0.05128
 contrast boundary_ph_1_13 mean_abs_error_ph M2 minus M1           0.305            0.1017           0.2033             -0.1417              0.5483                          0.5            0.1667
 contrast interior_ph_2_12 mean_abs_error_ph M2 minus M1          0.3612            0.3882         -0.02697            -0.09879             0.04606                       0.5152            0.0303
@@ -97,9 +97,9 @@ contrast interior_ph_2_12   binary_accuracy M1 minus M0               1         
      pad           all_ph   binary_accuracy M1 minus M0               1            0.9722          0.02778                   0             0.08333                      0.02778            0.9722
      pad boundary_ph_1_13   binary_accuracy M1 minus M0               1                 1                0                   0                   0                            0                 1
      pad interior_ph_2_12   binary_accuracy M1 minus M0               1            0.9667          0.03333                   0                 0.1                      0.03333            0.9667
-      bg           all_ph mean_abs_error_ph M2 minus M0           3.904             6.473           -2.569              -3.617              -1.588                       0.7949                 0
+      bg           all_ph mean_abs_error_ph M2 minus M0           3.899             6.473           -2.574              -3.621              -1.592                       0.7949                 0
       bg boundary_ph_1_13 mean_abs_error_ph M2 minus M0            4.13             9.932           -5.802              -7.897              -3.707                       0.8333                 0
-      bg interior_ph_2_12 mean_abs_error_ph M2 minus M0           3.863             5.844           -1.981              -2.908               -1.08                       0.7879                 0
+      bg interior_ph_2_12 mean_abs_error_ph M2 minus M0           3.857             5.844           -1.987               -2.91              -1.087                       0.7879                 0
 contrast           all_ph mean_abs_error_ph M2 minus M0          0.3526            0.5323          -0.1797             -0.3133            -0.04022                        0.641                 0
 contrast boundary_ph_1_13 mean_abs_error_ph M2 minus M0           0.305            0.2533          0.05167             -0.3333              0.4367                          0.5                 0
 contrast interior_ph_2_12 mean_abs_error_ph M2 minus M0          0.3612             0.583          -0.2218             -0.3546            -0.08606                       0.6667                 0
@@ -145,15 +145,15 @@ contrast    tp  6         -0.01545            -0.07848             0.04939      
       bg    tp  8         -0.07121             -0.7419              0.5843                       0.5152
 contrast    tp  8         -0.02182            -0.09091             0.04758                       0.5758
      pad    tp  8         -0.03152                -0.1             0.03728                       0.5152
-      bg    tp 10          -0.1652             -0.9538               0.568                       0.4848
+      bg    tp 10          -0.1709             -0.9591              0.5622                       0.4848
 contrast    tp 10         -0.02697            -0.09879             0.04606                       0.5152
      pad    tp 10         -0.03364             -0.1088             0.04122                       0.5152
       bg    tp 12           -0.107             -0.8718              0.6179                       0.4848
-contrast    tp 12         -0.03273             -0.1042             0.04092                       0.4848
+contrast    tp 12         -0.03303             -0.1049             0.04092                       0.4848
      pad    tp 12         -0.03818             -0.1118             0.03576                       0.5455
 
 Contrast per-strip link between forward Delta E gain and inverse pH gain
-  correlation (pH 2-12): 0.660
+  correlation (pH 2-12): 0.661
 
 Notes
 - Estimated pH is restricted to [1, 13]; boundary errors cannot overshoot.

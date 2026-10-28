@@ -1,5 +1,5 @@
 Simulation LOSO, RCS (script 31, script 19 model code)
 ================================================================================
-data sets: 400 | workers: 6
+data sets: 400 | workers: 12
 models: ['rcs_additive', 'rcs_phone', 'rcs_phone_ridge'] | knots: [3, 4, 5] | lambda grid: [0.01, 0.1, 1, 10, 100, 1000]
-elapsed: 15.1 min
+elapsed: 21.1 min

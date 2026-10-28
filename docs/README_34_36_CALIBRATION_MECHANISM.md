@@ -29,7 +29,7 @@ Mean |pH shift| over pH 2-12 (Contrast; posterior median):
 
 | component | Galaxy S24+ | iPhone 13 Pro | iPhone 16 Pro |
 |---|---|---|---|
-| phone offset | **0.63** | **0.52** | 0.12 |
+| phone offset | **0.63** | **0.53** | 0.11 |
 | phone curve shape | 0.13 | 0.22 | 0.18 |
 | light (largest) | 0.16 | 0.03 | 0.07 |
 | strip noise (SD, all phones) | 0.30 | | |
@@ -41,8 +41,8 @@ Mean |pH shift| over pH 2-12 (Contrast; posterior median):
   direction.
 - After the offset is removed, the dominant remaining error is non-smooth
   strip-to-strip variation (SD 0.30 pH), which device calibration cannot remove.
-- Background subtraction reduces the offset effect (Pad offset: 0.84 / 0.45 /
-  0.39 vs Contrast 0.63 / 0.52 / 0.12).
+- Background subtraction reduces the offset effect (Pad offset: 0.84 / 0.46 /
+  0.39 vs Contrast 0.63 / 0.53 / 0.11).
 
 Angle between each phone component and the pH direction, pH 2-12
 (`component_angle.csv`; 0 = aligned, 90 = orthogonal; median over pH, posterior
@@ -57,11 +57,11 @@ median [95%]):
   the pH direction, so most of their size moves the reading. The iPhone 16 Pro
   offset is nearly orthogonal (72 degrees), which is why its pH effect is small.
 - Curve-shape differences are oblique (51-65 degrees) as well as small.
-- `component_angle.csv` was produced with R 4.5.0 / mgcv 1.9.1 (Windows); the
-  other files in this folder come from R 4.5.2 / mgcv 1.9.3 (Mac). Rerunning
-  script 34 on Windows changes the shift summaries by at most 0.01 pH in the
-  table above (e.g. iPhone 13 Pro offset 0.52 -> 0.53). Regenerate all outputs
-  together in one environment before submission.
+- All outputs of scripts 12-38 were regenerated together on 2026-10-28 in one
+  environment (Windows, Python 3.13.3, R 4.5.0 / mgcv 1.9.1). Compared with the
+  earlier Mac run (R 4.5.2 / mgcv 1.9.3), only the script 34 posterior summaries
+  moved at the second decimal (iPhone 13 Pro offset 0.52 -> 0.53, iPhone 16 Pro
+  0.12 -> 0.11).
 
 ## 3. New-phone offset calibration (script 35)
 
@@ -93,9 +93,9 @@ matches the bias observed when an uncalibrated new phone is read
 
 | phone | predicted mean abs shift [95%] | observed mean bias, new phone |
 |---|---|---|
-| Galaxy S24+ | 0.63 [0.50, 0.77] | -0.57 |
-| iPhone 13 Pro | 0.52 [0.39, 0.66] | +0.64 |
-| iPhone 16 Pro | 0.12 [0.04, 0.24] | -0.12 |
+| Galaxy S24+ | 0.63 [0.49, 0.77] | -0.57 |
+| iPhone 13 Pro | 0.53 [0.40, 0.66] | +0.64 |
+| iPhone 16 Pro | 0.11 [0.04, 0.23] | -0.12 |
 
 ## Caveats
 

@@ -1,12 +1,13 @@
 GAM inverse pH prediction (script 28)
 ================================================================================
-input: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv
-output: /Users/soyeon/Documents/HDMA/DIC_NuisanceDG/outputs/gam_inverse_ph
-R: R version 4.5.2 (2025-10-31) | mgcv: 1.9.3
+input: C:\.Soyeon\DS\학부연구생\DIC_NuisanceDG/outputs/factorial_analysis/analysis_factorial_table.csv
+output: C:\.Soyeon\DS\학부연구생\DIC_NuisanceDG/outputs/gam_inverse_ph
+R: R version 4.5.0 (2025-04-11 ucrt) | mgcv: 1.9.1
 folds: 39 | specs: tp10, tp6, tp8, tp12, cr10
 pH grid: 1 to 13 step 0.05
+light mode: known
 fits: 5265 | non-converged: 0
-elapsed: 5.6 min
+elapsed: 9.9 min
 
 Estimated pH = grid value minimizing Delta E76 to the predicted Lab of the
 held-out strip's phone under the image's light (strip effect = 0).

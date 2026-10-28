@@ -42,15 +42,15 @@ S1b: Freedman-Lane pH x phone rejection without phone-specific curves
 Real-data reference (r = strip SD / image SD from GAM M1; tau = pH SD / image SD):
 {
   "bg_L": {
-    "r_strip_over_image_M1": 0.7478652111608916,
+    "r_strip_over_image_M1": 0.7478652111608903,
     "tau_pH_over_image": 0.7861928683219302
   },
   "bg_a": {
-    "r_strip_over_image_M1": 0.9515511479728257,
+    "r_strip_over_image_M1": 0.9515511479728286,
     "tau_pH_over_image": 0.47816032592105157
   },
   "bg_b": {
-    "r_strip_over_image_M1": 0.001878786361123074,
+    "r_strip_over_image_M1": 0.001878786361062526,
     "tau_pH_over_image": 0.1917079150475171
   },
   "contrast_L": {
@@ -62,7 +62,7 @@ Real-data reference (r = strip SD / image SD from GAM M1; tau = pH SD / image SD
     "tau_pH_over_image": 31.648872898584052
   },
   "contrast_b": {
-    "r_strip_over_image_M1": 5.286218794280152,
+    "r_strip_over_image_M1": 5.28621879428014,
     "tau_pH_over_image": 21.337814134817414
   }
 }
